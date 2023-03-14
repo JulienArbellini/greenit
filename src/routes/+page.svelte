@@ -19,12 +19,12 @@
 </svelte:head>
 
 <main class="flex flex-col w-full h-full">
-  <div class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
-    <div class="w-32 ml-2">
+  <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
+    <h1 class="w-32 ml-2">
       <Logo />
-    </div>
+    </h1>
     <MenuButton text="Menu" />
-  </div>
+  </header>
   {#each "syx3" as l}
     <section class="h-screen w-screen transition duration-500 relative">
       <picture>
