@@ -3,6 +3,13 @@
   import MenuButton from "../components/MenuButton.svelte";
 </script>
 
+<svelte:head>
+  <title>Tesla - Green IT</title>
+  <link rel="image_src" href="/images/home/hero-model-3.jpg" />
+  <meta name="description" content="Tesla accélère la transition mondiale vers une énergie durable en proposant des véhicules électriques, des panneaux solaires et des solutions intégrées d'énergie renouvelable pour les particuliers et les entreprises." />
+  <meta name="keywords" content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
+</svelte:head>
+
 <main class="flex flex-col w-full h-full">
   <div class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
     <div class="w-32 ml-2">
