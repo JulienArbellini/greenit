@@ -6,13 +6,13 @@
 <svelte:head>
   <title>Tesla - Green IT</title>
   <link rel="image_src" href="/images/home/hero-model-3.jpg" />
-  <meta name="description" content="Tesla accélère la transition mondiale vers une énergie durable en proposant des véhicules électriques, des panneaux solaires et des solutions intégrées d'énergie renouvelable pour les particuliers et les entreprises." />
+  <meta name="description" content="Tesla is accelerating the world&#039;s transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
   <meta name="keywords" content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
   <link rel="canonical" href="https://green-it.vercel.app/" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@tesla" />
-  <meta name="twitter:description" content="Tesla accélère la transition mondiale vers une énergie durable en proposant des véhicules électriques, des panneaux solaires et des solutions intégrées d'énergie renouvelable pour les particuliers et les entreprises." />
+  <meta name="twitter:description" content="Tesla is accelerating the world&#039;s transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
   <meta name="twitter:title" content="Tesla - Green IT" />
   <meta name="twitter:creator" content="@tesla" />
   <meta name="twitter:url" content="https://green-it.vercel.app/" />
