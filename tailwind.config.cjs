@@ -3,12 +3,11 @@ module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-model-y': "url('/images/home/hero-model-y.jpg')",
+      // use the font from /fonts/gotthamssm.woff2
+      fontFamily: {
+        sans: ["GothamSSM", "sans-serif"],
       },
-      backgroundSize: {
-        'fit': 'fit'
-      }
+        
     },
   },
   plugins: [],
