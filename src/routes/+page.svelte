@@ -1,7 +1,20 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<script>
 
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-</style>
+  import Logo from "../components/Logo.svelte";
+  import MenuButton from "../components/MenuButton.svelte";
+
+</script>
+<main class="flex flex-col w-full h-full">
+    <div class="fixed px-3 py-2 w-full flex justify-between items-center">
+        <div class="w-32 ml-2">
+            <Logo />
+        </div>
+        <MenuButton text="Menu" />
+    </div>
+    <section class="h-screen w-screen">
+        <img src="/images/home/hero-model-y.jpg" class="h-full w-screen object-cover" alt="hero">
+    </section> 
+
+    <section class="h-screen w-screen">
+    </section> 
+</main>
