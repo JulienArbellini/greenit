@@ -12,9 +12,13 @@
         <MenuButton text="Menu" />
     </div>
     <section class="h-screen w-screen">
-        <img src="/images/home/hero-model-y.jpg" class="h-full w-screen object-cover" alt="hero">
+        <img src="/images/home/hero-model-s.jpg" class="h-full w-screen object-cover" alt="hero">
     </section> 
 
     <section class="h-screen w-screen">
+    </section> 
+
+    <section class="h-screen w-screen">
+        <img src="/images/home/hero-model-y.jpg" class="h-full w-screen object-cover" alt="hero">
     </section> 
 </main>
