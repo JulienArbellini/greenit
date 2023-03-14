@@ -11,14 +11,13 @@
         </div>
         <MenuButton text="Menu" />
     </div>
-    <section class="h-screen w-screen">
-        <img src="/images/home/hero-model-s.jpg" class="h-full w-screen object-cover" alt="hero">
+    {#each "syx3" as l}
+    <section class="h-screen w-screen transition duration-500">
+        <picture>
+            <source srcset="/images/home/hero-model-{l}-mobile.jpg" media="(max-width: 599px)">
+            <source srcset="/images/home/hero-model-{l}.jpg">
+            <img src="/images/home/hero-model-{l}.jpg" loading="lazy" class="h-full w-screen object-cover shadow-inner" alt="hero model {l}">
+        </picture>
     </section> 
-
-    <section class="h-screen w-screen">
-    </section> 
-
-    <section class="h-screen w-screen">
-        <img src="/images/home/hero-model-y.jpg" class="h-full w-screen object-cover" alt="hero">
-    </section> 
+    {/each}
 </main>
