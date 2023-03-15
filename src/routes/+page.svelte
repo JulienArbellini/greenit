@@ -61,4 +61,37 @@
       </div>
     </section>
   {/each}
+  {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true}] as p}
+    <section class="h-screen w-screen transition duration-500 relative">
+      <picture>
+        <source
+          srcset="/images/home/hero-{p.id}-mobile.jpg"
+          media="(max-width: 599px)" />
+        <source srcset="/images/home/hero-{p.id}.jpg" />
+        <img
+          src="/images/home/hero-{p.id}.jpg"
+          loading="lazy"
+          class="h-full w-screen object-cover shadow-inner"
+          alt="hero {p.id}" />
+      </picture>
+      <div
+        class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
+        <div class="flex flex-col items-center">
+          <h2 class="text-5xl mb-4">{p.title}</h2>
+          <p class="text-md">{p.subtitle}</p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
+          <button
+            class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
+            >Shop Now</button>
+          {#if !p.singleBtn}
+          <button
+            class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
+            >Learn More</button>
+          {/if}
+        </div>
+      </div>
+    </section>
+  {/each}
 </main>
