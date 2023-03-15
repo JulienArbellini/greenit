@@ -1,6 +1,6 @@
 <script>
   import HomeFooter from "../components/HomeFooter.svelte";
-import Logo from "../components/Logo.svelte";
+  import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
 </script>
 
@@ -62,7 +62,7 @@ import Logo from "../components/Logo.svelte";
       </div>
     </section>
   {/each}
-  {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true}] as p}
+  {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true }] as p}
     <section class="h-screen w-screen transition duration-500 relative">
       <picture>
         <source
@@ -87,9 +87,9 @@ import Logo from "../components/Logo.svelte";
             class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
             >Shop Now</button>
           {#if !p.singleBtn}
-          <button
-            class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
-            >Learn More</button>
+            <button
+              class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
+              >Learn More</button>
           {/if}
         </div>
       </div>
