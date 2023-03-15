@@ -1,5 +1,6 @@
 <script>
-  import Logo from "../components/Logo.svelte";
+  import HomeFooter from "../components/HomeFooter.svelte";
+import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
 </script>
 
@@ -94,4 +95,5 @@
       </div>
     </section>
   {/each}
+  <HomeFooter />
 </main>
