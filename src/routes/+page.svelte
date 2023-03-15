@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import HomeFooter from "../components/HomeFooter.svelte";
   import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
@@ -45,7 +45,7 @@
           src="/images/home/hero-model-{l}.jpg"
           loading="lazy"
           class="h-full w-screen object-cover shadow-inner"
-          alt="hero model {l}" />
+          alt="hero model-{l}" />
       </picture>
       <div
         class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
