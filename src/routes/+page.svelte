@@ -36,7 +36,7 @@
   </header>
   {#each "syx3" as l}
     <section
-      class="h-screen w-screen transition duration-500 relative snap-start">
+      class="h-screen w-screen min-h-screen transition duration-500 relative snap-start">
       <picture>
         <source
           srcset="/images/home/hero-model-{l}-mobile.jpg"
@@ -91,7 +91,7 @@
   </section>
   {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true }] as p}
     <section
-      class="h-screen w-screen transition duration-500 relative  snap-start">
+      class="h-screen w-screen min-h-screen transition duration-500 relative  snap-start">
       <picture>
         <source
           srcset="/images/home/hero-{p.id}-mobile.jpg"
