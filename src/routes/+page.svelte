@@ -35,7 +35,8 @@
     <MenuButton text="Menu" />
   </header>
   {#each "syx3" as l}
-    <section class="h-screen w-screen transition duration-500 relative">
+    <section
+      class="h-screen w-screen transition duration-500 relative snap-start">
       <picture>
         <source
           srcset="/images/home/hero-model-{l}-mobile.jpg"
@@ -62,8 +63,35 @@
       </div>
     </section>
   {/each}
+  <section
+    class="w-screen min-h-screen h-screen snap-start flex flex-col items-center justify-around bg-black">
+    <span class="text-white text-4xl text-center">Discover the Roadster</span>
+    <video
+      class="w-screen mt-20"
+      loop
+      muted
+      controls
+      poster="/images/home/poster-roadster.jpg"
+      height="360"
+      width="1280">
+      <source
+        src="/images/home/roadster-av1.webm"
+        type="video/webm; codecs=av1" />
+      <source
+        src="/images/home/roadster-vp9.webm"
+        type="video/webm; codecs=vp9" />
+    </video>
+
+    <div
+      class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center p-4 items-center">
+      <button
+        class="bg-gray-200 max-h-12 sm:w-64 text-black px-4 py-2 rounded shadow"
+        >Soon Available</button>
+    </div>
+  </section>
   {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true }] as p}
-    <section class="h-screen w-screen transition duration-500 relative">
+    <section
+      class="h-screen w-screen transition duration-500 relative  snap-start">
       <picture>
         <source
           srcset="/images/home/hero-{p.id}-mobile.jpg"
