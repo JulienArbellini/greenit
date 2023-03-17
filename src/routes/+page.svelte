@@ -71,7 +71,7 @@
         <img
           src="/images/home/hero-model-{l}.jpg"
           loading="lazy"
-          class="h-full w-screen object-cover"
+          class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
           alt="hero model-{l}" />
       </picture>
       <div
@@ -139,7 +139,7 @@
           srcset="/images/home/hero-{p.id}-1920.avif"
           media="(max-width: 2000px)"
           type="image/avif" />
-        <source 
+        <source
           srcset="/images/home/hero-{p.id}-1920.jpg"
           media="(max-width: 2000px)"
           type="image/jpeg" />
@@ -149,7 +149,7 @@
         <img
           src="/images/home/hero-{p.id}.jpg"
           loading="lazy"
-          class="h-full w-screen object-cover shadow-inner"
+          class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
           alt="hero {p.id}" />
       </picture>
       <div
@@ -173,4 +173,13 @@
     </section>
   {/each}
   <HomeFooter />
+
+  <script>
+    const images = document.querySelectorAll("img");
+    images.forEach((img) => {
+      img.addEventListener("load", () => {
+        img.classList.remove("opacity-0");
+      });
+    });
+  </script>
 </main>
