@@ -39,13 +39,39 @@
       class="h-screen w-screen min-h-screen transition duration-500 relative snap-start">
       <picture>
         <source
-          srcset="/images/home/hero-model-{l}-mobile.jpg"
+          srcset="/images/home/hero-model-{l}-mobile.avif"
+          type="image/avif"
           media="(max-width: 599px)" />
-        <source srcset="/images/home/hero-model-{l}.jpg" />
+        <source
+          srcset="/images/home/hero-model-{l}-mobile.jpg"
+          type="image/jpeg"
+          media="(max-width: 599px)" />
+        <source
+          srcset="/images/home/hero-model-{l}-1280.avif"
+          type="image/avif"
+          media="(max-width: 1000px)" />
+        <source
+          srcset="/images/home/hero-model-{l}-1280.jpg"
+          type="image/jpeg"
+          media="(max-width: 1000px)" />
+        <source
+          srcset="/images/home/hero-model-{l}-1920.avif"
+          type="image/avif"
+          media="(max-width: 2000px)" />
+        <source
+          srcset="/images/home/hero-model-{l}-1920.jpg"
+          type="image/jpeg"
+          media="(max-width: 2000px)" />
+        <source
+          srcset="/images/home/hero-model-{l}.avif"
+          type="image/avif" />
+        <source
+          srcset="/images/home/hero-model-{l}.jpg"
+          type="image/jpeg" />
         <img
           src="/images/home/hero-model-{l}.jpg"
           loading="lazy"
-          class="h-full w-screen object-cover shadow-inner"
+          class="h-full w-screen object-cover"
           alt="hero model-{l}" />
       </picture>
       <div
@@ -94,9 +120,32 @@
       class="h-screen w-screen min-h-screen transition duration-500 relative  snap-start">
       <picture>
         <source
+          srcset="/images/home/hero-{p.id}-mobile.avif"
+          media="(max-width: 599px)"
+          type="image/avif" />
+        <source
           srcset="/images/home/hero-{p.id}-mobile.jpg"
-          media="(max-width: 599px)" />
-        <source srcset="/images/home/hero-{p.id}.jpg" />
+          media="(max-width: 599px)"
+          type="image/jpeg" />
+        <source
+          srcset="/images/home/hero-{p.id}-1280.avif"
+          media="(max-width: 1000px)"
+          type="image/avif" />
+        <source
+          srcset="/images/home/hero-{p.id}-1280.jpg"
+          media="(max-width: 1000px)"
+          type="image/jpeg" />
+        <source
+          srcset="/images/home/hero-{p.id}-1920.avif"
+          media="(max-width: 2000px)"
+          type="image/avif" />
+        <source 
+          srcset="/images/home/hero-{p.id}-1920.jpg"
+          media="(max-width: 2000px)"
+          type="image/jpeg" />
+        <source
+          srcset="/images/home/hero-{p.id}.jpg"
+          type="image/jpeg" />
         <img
           src="/images/home/hero-{p.id}.jpg"
           loading="lazy"
