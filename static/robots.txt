@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://green-it.vercel.app/sitemap.xml
