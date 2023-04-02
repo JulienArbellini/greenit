@@ -1,4 +1,16 @@
 export async function GET() {
+  const urls = [
+    'https://green-it.vercel.app/',
+  ];
+
+  const sitemap = urls
+    .map((url) => `
+      <url>
+        <loc>${url}</loc>
+      </url>
+      `)
+    .join('');
+
   return new Response(
     `
       <?xml version="1.0" encoding="UTF-8" ?>
@@ -10,9 +22,7 @@ export async function GET() {
         xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
       >
-      <url>
-        <loc>https://green-it.vercel.app/</loc>
-      </url>
+      ${sitemap}
       </urlset>`.trim(),
     {
       headers: {
