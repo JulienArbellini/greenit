@@ -7,7 +7,6 @@ module.exports = {
       fontFamily: {
         sans: ["GothamSSM", "sans-serif"],
       },
-        
     },
   },
   plugins: [],
