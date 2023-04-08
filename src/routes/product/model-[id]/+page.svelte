@@ -8,70 +8,56 @@
   console.log(data.image?.autopilot);
 </script>
 
-<main class="flex flex-col w-full h-full">
+<main class="flex flex-col w-full h-full overflow-x-hidden">
   <div class="absolute px-3 py-2 w-full flex justify-between items-center z-10">
     <div class="w-32 ml-2">
       <Logo />
     </div>
     <MenuButton text="Menu" />
   </div>
-  <section class="h-screen transition duration-500 relative">
-    <div
-      class="absolute text-4xl font-bold top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      {data.info.model}
-    </div>
-    <div
-      class="absolute bottom-16 h-1/6 w-1/4 left-1/2 transform -translate-x-1/2 flex flex-col">
-      <div class="h-2/4 flex flex-row">
-        <div class="w-1/3 flex flex-col justify-center items-center text-white">
-          <div class="text-2xl">76 cu ft</div>
-          <div class="text-xs">Cargo Space</div>
-        </div>
-        <div class="w-1/3 flex flex-col justify-center items-center text-white">
-          <div class="text-2xl">330 mi</div>
-          <div class="text-xs">Range (EPA est.)</div>
-        </div>
-        <div class="w-1/3 flex flex-col justify-center items-center text-white">
-          <div class="text-2xl">AWD</div>
-          <div class="text-xs">Dual Motor</div>
-        </div>
-      </div>
-      <div class="h-2/4 flex flex-row gap-4">
-        <div
-          class="border-solid border-2 bg-black bg-opacity-40 border-white rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-white hover:text-black">
-          <div>Order Now</div>
-        </div>
-        <div
-          class="bg-black bg-opacity-40 rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-black hover:text-white">
-          <div>View Inventory</div>
-        </div>
-      </div>
-    </div>
+
+  <section class="h-screen w-screen transition duration-500 relative">
     <picture>
       <source
         srcset={data.image?.Main}
         media="(max-width: 599px)" />
-      <source srcset={data.image?.Main} />
+        <source srcset={data.image?.Main} />
       <img
-        src={data.image?.Main}
+      src={data.image?.Main}
         loading="lazy"
         class="h-full w-screen object-cover shadow-inner"
         alt="hero model y" />
     </picture>
+    <div
+      class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
+      <h2 class="text-5xl mb-4"> {data.info.model}</h2>
+      <div
+        class="relative bottom-20 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
+        <button
+          class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
+          >Custom Order</button>
+        <button
+          class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
+          >Demo Drive</button>
+      </div>
+    </div>
     <svg
-      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-bounce w-6 h-6 text-gray-200"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-      stroke="currentColor">
-      <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-    </svg>
+    class="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-bounce w-6 h-6 text-gray-200"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+    stroke="currentColor">
+    <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+  </svg>
   </section>
 
+
+
+
   <section
-    class="h-screen w-screen transition duration-500 relative flex text-gray-400 text-sm">
+    class="w-screen transition duration-500 flex text-gray-400 text-sm">
     <div class="opacity-0 w-1/5 h-screen p-2 flex flex-col items-center space-y-96" id="animate">
       <div class="mt-9  w-10/12 ">
         <div
@@ -117,6 +103,7 @@
     </picture>
   </section>
 
+  <!--
   <section
     class="h-screen w-screen transition duration-500 relative flex flex-col justify-center items-center">
     <div class="flex flex-row justify-center w-7/12  mb-12 h-1/6 gap-6">
@@ -279,9 +266,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
-<footer class="h-24 w-full flex flex-row justify-center gap-5 text-xs">
+<!-- <footer class="h-24 w-full flex flex-row justify-center gap-5 text-xs">
   <div class="h-full flex flex-col justify-center items-center gap-5">
     <div class="h1">Tesla © 2023</div>
   </div>
@@ -306,5 +293,5 @@
   <div class="h-full flex flex-col justify-center items-center">
     <div class="h1">Locations</div>
   </div>
-</footer>
+</footer> -->
 <Animation />
