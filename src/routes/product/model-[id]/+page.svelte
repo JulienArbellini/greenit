@@ -4,6 +4,7 @@
   import MenuButton from "../../../components/MenuButton.svelte";
   import OrderButton from "../../../components/OrderButton.svelte";
   import HistoryButton from "../../../components/HistoryButton.svelte";
+  import Animation from "../../../components/Animation.svelte";
   console.log(data.image?.autopilot);
 </script>
 
@@ -19,7 +20,8 @@
       class="absolute text-4xl font-bold top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       {data.info.model}
     </div>
-    <div class="absolute bottom-16 h-1/6 w-1/4 left-1/2 transform -translate-x-1/2 flex flex-col">
+    <div
+      class="absolute bottom-16 h-1/6 w-1/4 left-1/2 transform -translate-x-1/2 flex flex-col">
       <div class="h-2/4 flex flex-row">
         <div class="w-1/3 flex flex-col justify-center items-center text-white">
           <div class="text-2xl">76 cu ft</div>
@@ -35,14 +37,15 @@
         </div>
       </div>
       <div class="h-2/4 flex flex-row gap-4">
-        <div class="border-solid border-2 bg-black bg-opacity-40 border-white rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-white hover:text-black">
+        <div
+          class="border-solid border-2 bg-black bg-opacity-40 border-white rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-white hover:text-black">
           <div>Order Now</div>
         </div>
-        <div class="bg-black bg-opacity-40 rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-black hover:text-white">
+        <div
+          class="bg-black bg-opacity-40 rounded w-10/12 h-9 flex justify-center items-center text-white text-xs font-bold  hover:bg-black hover:text-white">
           <div>View Inventory</div>
         </div>
       </div>
-
     </div>
     <picture>
       <source
@@ -55,13 +58,27 @@
         class="h-full w-screen object-cover shadow-inner"
         alt="hero model y" />
     </picture>
+    <svg
+      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-bounce w-6 h-6 text-gray-200"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
   </section>
 
   <section
     class="h-screen w-screen transition duration-500 relative flex text-gray-400 text-sm">
-    <div class="w-1/5 h-screen p-2 flex flex-col items-center space-y-96">
+    <div class="opacity-0 w-1/5 h-screen p-2 flex flex-col items-center space-y-96" id="animate">
       <div class="mt-9  w-10/12 ">
-        <div class="text-gray-500 text-lg">Safety</div>
+        <div
+          class="text-gray-500 text-lg  "
+          >
+          Safety
+        </div>
         <h1 class="text-xl font-bold text-gray-800">Designed for Safety</h1>
         <div class="text-gray-400 mt-4 ">
           Safety is the most important part of every Tesla. We design our
@@ -264,3 +281,30 @@
     </div>
   </section>
 </main>
+<footer class="h-24 w-full flex flex-row justify-center gap-5 text-xs">
+  <div class="h-full flex flex-col justify-center items-center gap-5">
+    <div class="h1">Tesla © 2023</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Privacy & Legal</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Vehicle Recalls</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Contact</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Careers</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">News</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Engage</div>
+  </div>
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="h1">Locations</div>
+  </div>
+</footer>
+<Animation />
