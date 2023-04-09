@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       // use the font from /fonts/gotthamssm.woff2
       fontFamily: {
-        sans: ["GothamSSM", "sans-serif"],
+        medium: ["GothamSSM", "sans-serif"],
+        sans: ["GothamSSM-Light", "sans-serif"],
+        big: ["GothamSSM-Big", "sans-serif"],
+        huge: ["GothamSSM-Large", "sans-serif"],
       },
     },
   },

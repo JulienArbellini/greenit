@@ -31,7 +31,7 @@
     </picture>
     <div
       class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
-      <h2 class="text-5xl mb-4">{data.info.model}</h2>
+      <h2 class="text-5xl font-medium mb-4">{data.info.model}</h2>
       <div
         class="relative bottom-20 flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
         <button class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
@@ -74,10 +74,10 @@
     <div
       class="p-2 flex flex-col items-center sm:w-1/5 h-82"
       id="animate">
-      <div class="mt-9  w-11/12 sm:w-10/12 sm:font-extralight ">
+      <div class="mt-9  w-11/12 sm:w-10/12 sm:font-extralight text-black">
         <div class="text-gray-500 text-lg  ">Safety</div>
-        <h1 class="text-xl font-bold text-gray-800">Designed for Safety</h1>
-        <div class="text-gray-400 mt-4 ">
+        <h1 class="text-xl font-huge text-gray-800">Designed for Safety</h1>
+        <div class="mt-4 ">
           Safety is the most important part of every Tesla. We design our
           vehicles to exceed safety standards.
         </div>
@@ -108,7 +108,7 @@
     <div
       class="flex  flex-col  justify-center w-[90%] h-[] mt-8 sm:flex-row sm:w-7/12  sm:mb-12 sm:h-1/6 sm:gap-6 sm:mt-0">
       <div class="mt-3 text-gray-600 font-thin sm:hidden">Utility</div>
-      <div class="text-xl sm:hidden">A Place For Everything</div>
+      <div class="text-xl font-big sm:hidden">A Place For Everything</div>
       <div class="sm:w-3/5 mt-3 text-sm text-gray-600 sm:order-2">
         Model Y provides maximum versatility—able to carry 7 passengers and
         their cargo. Each second row seat folds flat independently, creating
@@ -122,7 +122,7 @@
       </div>
       <div class="flex flex-col w-2/5">
         <div class="mt-3 text-gray-600 font-thin hidden sm:block">Utility</div>
-        <div class="text-xl hidden sm:block">A Place For Everything</div>
+        <div class="text-xl hidden font-huge sm:block">A Place For Everything</div>
         <div class=" flex-row gap-5 w-full mt-4 hidden sm:flex">
           <OrderButton text="Order Now" />
           <HistoryButton text="View Inventory" />
@@ -158,7 +158,7 @@
       class="h-1/6 w-full flex flex-col p-8 sm:p-0 sm:flex-row sm:justify-center sm:items-center gap-5">
       <div class="flex flex-col sm:justify-center sm:items-center sm:w-3/6">
         <div class="text-gray-600 font-thin">{data?.AWD?.title}</div>
-        <div class="text-black text-2xl text-start ">{data?.AWD?.motor}</div>
+        <div class="text-black text-2xl font-big text-start ">{data?.AWD?.motor}</div>
         <div class="w-1/3 justify-center mt-3 hidden sm:flex">
           <OrderButton text="Order Now" />
         </div>
@@ -190,7 +190,7 @@
       class="h-1/6 w-full flex flex-col p-8 sm:p-0 sm:flex-row sm:justify-center sm:items-center gap-5">
       <div class="flex flex-col sm:justify-center sm:items-center sm:w-3/6">
         <div class="text-gray-600 font-thin">Interior</div>
-        <div class="text-black text-2xl text-start ">
+        <div class="text-black text-2xl text-start font-big">
           Built Around the Driver
         </div>
         <div class="w-1/3 justify-center mt-3 hidden sm:flex">
@@ -228,7 +228,7 @@
       class="h-1/6 w-full flex flex-col p-8 sm:p-0 sm:flex-row sm:justify-center sm:items-center gap-5">
       <div class="flex flex-col sm:justify-center sm:items-center sm:w-3/6">
         <div class="text-gray-600 font-thin">Autopilot</div>
-        <div class="text-black text-2xl text-start ">
+        <div class="text-black text-2xl text-start font-big ">
           Future of Driving
         </div>
         <div class="w-1/3 justify-center mt-3 hidden sm:flex">
