@@ -5,7 +5,8 @@
   import OrderButton from "../../../components/OrderButton.svelte";
   import HistoryButton from "../../../components/HistoryButton.svelte";
   import Animation from "../../../components/Animation.svelte";
-  console.log(data.image?.autopilot);
+  // console.log(data.image?.autopilot);
+  console.log(data.image?.Safety);
 </script>
 
 <main class="flex flex-col w-full h-full overflow-x-hidden">
@@ -71,7 +72,7 @@
       </picture>
     </div>
     <div
-      class="p-2 flex flex-col items-center sm:space-y-96 sm:w-1/5 h-82"
+      class="p-2 flex flex-col items-center sm:w-1/5 h-82"
       id="animate">
       <div class="mt-9  w-11/12 sm:w-10/12 ">
         <div class="text-gray-500 text-lg  ">Safety</div>

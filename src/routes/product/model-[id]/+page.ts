@@ -8,40 +8,57 @@ export const load = ({ params }) => {
     }
     let info;
     let image;
-    image = {
-        autopilot: `/images/product/Model-${params.id}-Autopilot.jpeg`,
-        AWD: `/images/product/Model-${params.id}-AWD.webp`,
-        Interior: `/images/product/Model-${params.id}-Interior.webp`,
-        Main: `/images/product/Model-${params.id}-Main.webp`,
-        Safety: `/images/product/Model-${params.id}-Safety.png`,
-        Utility: `/images/product/Model-${params.id}-Utility.jpeg`,
-    }
+
     switch (params.id) {
-       case 's':
-       info = {
-             text: "bla bla",
-             model: `Model-${params.id}`,
-             price: 34500
-        }
-        break;
+        case 's':
+            info = {
+                text: "bla bla",
+                model: `Model-S`,
+                price: 34500
+            },
+                image = {
+                    autopilot: `/images/product/S/Autopilot.jpeg`,
+                    AWD: `/images/product/S/AWD.jpeg`,
+                    Interior: `/images/product/S/Interior.jpeg`,
+                    Main: `/images/product/S/Main.jpeg`,
+                    Safety: `/images/product/S/Safety.png`,
+                    Utility: `/images/product/S/Utility.jpeg`,
+                }
+            break;
         case 'x':
-        info = {
+            info = {
                 text: "bla bla",
                 model: `Model-${params.id}`,
                 price: 34500
-        }
-        break;
+            },
+            image = {
+                autopilot: `/images/product/X/Autopilot.jpeg`,
+                AWD: `/images/product/X/AWD.jpeg`,
+                Interior: `/images/product/X/Interior.webp`,
+                Main: `/images/product/X/Main.jpeg`,
+                Safety: `/images/product/X/Safety.png`,
+                Utility: `/images/product/X/Utility.jpeg`,
+            }
+            break;
         case 'y':
-        info = {
+            info = {
                 text: "bla bla",
                 model: `Model Y`,
                 price: 34500
-        }
+            },
+                image = {
+                    autopilot: `/images/product/Y/Autopilot.jpeg`,
+                    AWD: `/images/product/Y/AWD.webp`,
+                    Interior: `/images/product/Y/Interior.webp`,
+                    Main: `/images/product/Y/Main.webp`,
+                    Safety: `/images/product/Y/Safety.png`,
+                    Utility: `/images/product/Y/Utility.jpeg`,
+                }
 
-        break;
+            break;
     }
     return {
-        info,image
+        info, image
     }
 
 }
