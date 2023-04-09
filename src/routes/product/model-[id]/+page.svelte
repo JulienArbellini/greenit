@@ -74,7 +74,7 @@
     <div
       class="p-2 flex flex-col items-center sm:w-1/5 h-82"
       id="animate">
-      <div class="mt-9  w-11/12 sm:w-10/12 ">
+      <div class="mt-9  w-11/12 sm:w-10/12 sm:font-extralight ">
         <div class="text-gray-500 text-lg  ">Safety</div>
         <h1 class="text-xl font-bold text-gray-800">Designed for Safety</h1>
         <div class="text-gray-400 mt-4 ">
@@ -83,14 +83,14 @@
         </div>
         <div class="mt-3 text-sm font-extrabold text-black">5-Star Rating</div>
         <div class="mt-1">
-          Model Y achieved NHTSA 5-star safety ratings in every category and
+          {data?.info?.model} achieved NHTSA 5-star safety ratings in every category and
           subcategory.
         </div>
         <div class="mt-3 text-sm font-extrabold text-black">
           Top Safety Pick+
         </div>
         <div class="mt-1">
-          Model Y received the IIHS Top Safety Pick+ award, with top ratings in
+          {data?.info?.model} received the IIHS Top Safety Pick+ award, with top ratings in
           all crashworthiness and front crash prevention categories
         </div>
       </div>
@@ -157,18 +157,15 @@
     <div
       class="h-1/6 w-full flex flex-col p-8 sm:p-0 sm:flex-row sm:justify-center sm:items-center gap-5">
       <div class="flex flex-col sm:justify-center sm:items-center sm:w-3/6">
-        <div class="text-gray-600 font-thin">All-Wheel Drive</div>
-        <div class="text-black text-2xl text-start ">Dual Motor</div>
+        <div class="text-gray-600 font-thin">{data?.AWD?.title}</div>
+        <div class="text-black text-2xl text-start ">{data?.AWD?.motor}</div>
         <div class="w-1/3 justify-center mt-3 hidden sm:flex">
           <OrderButton text="Order Now" />
         </div>
       </div>
       <div class="sm:w-4/6 flex items-start">
         <div class="text-gray-400 text-sm w-full sm:w-3/5">
-          Tesla All-Wheel Drive has two ultra-responsive, independent electric
-          motors that digitally control torque to the front and rear wheels—for
-          far better handling, traction and stability control. Model Y is
-          capable in rain, snow, mud and off-road. Compare Models
+          {data?.AWD?.content}
         </div>
       </div>
       <div class="w-full justify-center mt-3 flex sm:hidden">
