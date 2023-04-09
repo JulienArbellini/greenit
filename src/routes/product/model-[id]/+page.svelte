@@ -252,7 +252,7 @@
 
 
 </main>
-<!-- <footer class="h-24 w-full flex flex-row justify-center gap-5 text-xs">
+<div class="mt-[7rem] mb-[3rem] h-[20rem] sm:mt-0 sm:mb-0 sm:h-24 sm:w-full flex flex-col sm:flex-row justify-center items-center gap-5 text-xs">
   <div class="h-full flex flex-col justify-center items-center gap-5">
     <div class="h1">Tesla © 2023</div>
   </div>
@@ -277,5 +277,5 @@
   <div class="h-full flex flex-col justify-center items-center">
     <div class="h1">Locations</div>
   </div>
-</footer> -->
+</div>
 <!-- <Animation /> -->
