@@ -11,7 +11,7 @@ export const load = ({ params }) => {
     let AWD;
     // let Interior;
     // let Main;
-    // let Utility;
+    let Utility;
 
     switch (params.id) {
         case 's':
@@ -32,6 +32,9 @@ export const load = ({ params }) => {
                 title: "",
                 motor: "Electric Powertrain",
                 content: "Model S platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions."
+            },
+            Utility = {
+                content: "With ample storage and 5,000 lbs of towing capacity, Model S is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go."
             }
 
             break;
@@ -53,6 +56,9 @@ export const load = ({ params }) => {
                 title: "",
                 motor: "Electric Powertrain",
                 content: "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions."
+            },
+            Utility = {
+                content: "With ample storage and 5,000 lbs of towing capacity, Model X is built for maximum utility. Front doors open and close automatically, Falcon Wing rear doors allow for easier loading and a trailer hitch comes standard, so you can bring your gear with you wherever you go."
             }
             break;
         case 'y':
@@ -73,12 +79,15 @@ export const load = ({ params }) => {
                 title: "All-Wheel Drive",
                 motor: "Dual Motor",
                 content: "Tesla All-Wheel Drive has two ultra-responsive, independent electric motors that digitally control torque to the front and rear wheels—for far better handling, traction and stability control. Model Y is capable in rain, snow, mud and off-road. Compare Models"
+            },
+            Utility = {
+                content: "Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick. Chat with a Tesla Advisor to learn more about Model Y or schedule a demo drive today."
             }
 
             break;
     }
     return {
-        info, image, AWD
+        info, image, AWD, Utility
     }
 
 }

@@ -110,12 +110,7 @@
       <div class="mt-3 text-gray-600 font-thin sm:hidden">Utility</div>
       <div class="text-xl font-big sm:hidden">A Place For Everything</div>
       <div class="sm:w-3/5 mt-3 text-sm text-gray-600 sm:order-2">
-        Model Y provides maximum versatility—able to carry 7 passengers and
-        their cargo. Each second row seat folds flat independently, creating
-        flexible storage for skis, furniture, luggage and more. The liftgate
-        opens to a low trunk floor that makes loading and unloading easy and
-        quick. Chat with a Tesla Advisor to learn more about Model Y or schedule
-        a demo drive today.
+        {data?.Utility?.content}
       </div>
       <div class="flex justify-center mt-8 w-full sm:hidden">
         <HistoryButton text="View Inventory" />
@@ -200,7 +195,7 @@
       <div class="sm:w-4/6 flex items-start">
         <div class="text-gray-400 text-sm w-full sm:w-3/5">
           With an elevated seating position and low dash, the driver has a
-          commanding view of the road ahead. The interior of Model Y is simple
+          commanding view of the road ahead. The interior of {data?.info?.model} is simple
           and clean, with a 15-inch touch screen, immersive sound system and an
           expansive all-glass roof that creates extra headroom and provides a
           seamless view of the sky. Compare Models
@@ -250,7 +245,10 @@
 
 
 </main>
-<div class="mt-[7rem] mb-[3rem] h-[20rem] sm:mt-0 sm:mb-0 sm:h-24 sm:w-full flex flex-col sm:flex-row justify-center items-center gap-5 text-xs">
+<div class="h-[10rem] mt-[7rem] w-full flex flex-col justify-center items-center">
+  <div class="text-xs w-[80%] text-gray-600 text-center sm:w-[40%]">Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. Learn more about Standard Connectivity and any limitations.</div>
+</div>
+<div class="mt-[3rem] mb-[3rem] h-[20rem] sm:mt-0 sm:mb-0 sm:h-24 sm:w-full flex flex-col sm:flex-row justify-center items-center gap-5 text-xs">
   <div class="h-full flex flex-col justify-center items-center gap-5">
     <div class="h1">Tesla © 2023</div>
   </div>
