@@ -5,7 +5,7 @@
 
 <label
   for="sidebarToggle"
-  class="cursor-pointer px-4 py-1 bg-black bg-opacity-10 transition-all backdrop-blur-lg duration-300 hover:bg-opacity-30 {textColor} rounded">
+  class="cursor-pointer font-big px-4 py-[0.3rem] text-sm bg-black bg-opacity-10 transition-all backdrop-blur-lg duration-300 hover:bg-opacity-30 {textColor} rounded">
   {text}
 </label>
 
@@ -16,10 +16,10 @@
 
   <label
   for="sidebarToggle"
-  class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 right-0 z-10 transition-opacity duration-300 opacity-0 pointer-events-none"
+  class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 right-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none"
 >
   <section
-    class="h-screen fixed bg-white bg-opacity-100 top-0 right-0 w-80 p-10 transition-all transform duration-300 translate-x-full"
+    class="h-screen fixed bg-white z-50 bg-opacity-100 top-0 right-0 w-80 p-10 transition-all transform duration-300 translate-x-full"
   >
     <div class="flex w-full justify-end">
       <label

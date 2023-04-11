@@ -1,5 +1,7 @@
 import { error } from "@sveltejs/kit";
 
+export const csr = false;
+
 export const load = ({ params }) => {
     if (!["x", "y", "s", "3"].includes(params.id)) {
         throw error(404, {
@@ -16,7 +18,22 @@ export const load = ({ params }) => {
                 title: "Model S",
                 subtitle: "Plaid",
                 textColor: "text-black",
-                logoColor: "fill-black"
+                logoColor: "fill-black",
+                hasSkeleton: false,
+                heroStats: [
+                    {
+                        title: "76cu ft",
+                        subtitle: "Cargo Space"
+                    },
+                    {
+                        title: "330 mi",
+                        subtitle: "Range (EPA est.)"
+                    },
+                    {
+                        title: "AWD",
+                        subtitle: "Dual Motor"
+                    }
+                ]
             }
             break;
         case "x":
@@ -24,7 +41,22 @@ export const load = ({ params }) => {
                 title: "Model X",
                 subtitle: "Plaid",
                 textColor: "text-black",
-                logoColor: "fill-black"
+                logoColor: "fill-black",
+                hasSkeleton: false,
+                heroStats: [
+                    {
+                        title: "76cu ft",
+                        subtitle: "Cargo Space"
+                    },
+                    {
+                        title: "330 mi",
+                        subtitle: "Range (EPA est.)"
+                    },
+                    {
+                        title: "AWD",
+                        subtitle: "Dual Motor"
+                    }
+                ]
             }
             break;
         case "y":
@@ -32,7 +64,22 @@ export const load = ({ params }) => {
                 title: "Model Y",
                 subtitle: "Schedule a Demo Drive",
                 textColor: "text-white",
-                logoColor: "fill-white"
+                logoColor: "fill-white",
+                hasSkeleton: true,
+                heroStats: [
+                    {
+                        title: "76cu ft",
+                        subtitle: "Cargo Space"
+                    },
+                    {
+                        title: "330 mi",
+                        subtitle: "Range (EPA est.)"
+                    },
+                    {
+                        title: "AWD",
+                        subtitle: "Dual Motor"
+                    }
+                ]
             }
             break;
         case "3":
@@ -40,7 +87,22 @@ export const load = ({ params }) => {
                 title: "Model 3",
                 subtitle: "Schedule a Demo Drive",
                 textColor: "text-white",
-                logoColor: "fill-white"
+                logoColor: "fill-white",
+                hasSkeleton: true,
+                heroStats: [
+                    {
+                        title: "76cu ft",
+                        subtitle: "Cargo Space"
+                    },
+                    {
+                        title: "330 mi",
+                        subtitle: "Range (EPA est.)"
+                    },
+                    {
+                        title: "AWD",
+                        subtitle: "Dual Motor"
+                    }
+                ]
             }
             break;
     }
