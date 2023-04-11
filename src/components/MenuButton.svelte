@@ -2,6 +2,7 @@
   import { slide, fade } from "svelte/transition";
 
   export let text: string;
+  export let textColor: string = "black";
   let open = false;
 
   function toggle() {
@@ -15,14 +16,14 @@
 </script>
 
 <button
-  class="px-4 py-1 bg-black bg-opacity-10 transition-all duration-300 hover:bg-opacity-30 text-black rounded"
+  class="px-4 py-1 bg-black bg-opacity-10 transition-all backdrop-blur-lg duration-300 hover:bg-opacity-30 {textColor} rounded"
   on:click={toggle}>
   {text}
 </button>
 
 {#if open}
   <div
-    class="w-screen h-screen bg-white backdrop-blur-[2px] bg-opacity-0 absolute top-0 left-0 z-10"
+    class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 left-0 z-10"
     in:fade={{ duration: 300 }}
     out:fade={{ duration: 300 }}
     on:click={toggle}
