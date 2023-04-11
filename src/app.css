@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'GothamSSM';
-    src: url('/fonts/gothamssm.woff2') format('woff2'),
+  font-family: "GothamSSM";
+  src: url("/fonts/gothamssm.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSM-Light";
+  src: url("/fonts/gothamssm-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSM-Big";
+  src: url("/fonts/gothamssm-book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GothamSSM-Large";
+  src: url("/fonts/Gothamssm-medium.woff2") format("woff2");
 }

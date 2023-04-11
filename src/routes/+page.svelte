@@ -49,10 +49,13 @@
       <div
         class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
         <h2 class="text-5xl mb-4">Model {l.toUpperCase()}</h2>
-        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
-          <button class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
+        <div
+          class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
+          <button
+            class="bg-zinc-800  sm:w-64 text-white px-4 py-2 rounded shadow"
             >Custom Order</button>
-          <button class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
+          <button
+            class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
             >Demo Drive</button>
         </div>
       </div>
