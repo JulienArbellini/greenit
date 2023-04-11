@@ -2,32 +2,81 @@
   import HomeFooter from "../components/HomeFooter.svelte";
   import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const images = document.querySelectorAll("img");
+    images.forEach((img) => {
+      img.addEventListener("load", () => {
+        img.classList.remove("opacity-0");
+      });
+
+      if (img.complete) {
+        img.classList.remove("opacity-0");
+      }
+    });
+  });
 </script>
 
 <svelte:head>
   <title>Tesla - Green IT</title>
-  <link rel="image_src" href="/images/home/hero-model-3.jpg" />
-  <meta name="description" content="Tesla is accelerating the world';s transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta name="keywords" content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
-  <link rel="canonical" href="https://green-it.vercel.app/" />
+  <link
+    rel="image_src"
+    href="/images/home/hero-model-3.jpg" />
+  <meta
+    name="description"
+    content="Tesla is accelerating the world';s transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
+  <meta
+    name="keywords"
+    content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
+  <link
+    rel="canonical"
+    href="https://green-it.vercel.app/" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@tesla" />
-  <meta name="twitter:description" content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta name="twitter:title" content="Tesla - Green IT" />
-  <meta name="twitter:creator" content="@tesla" />
-  <meta name="twitter:url" content="https://green-it.vercel.app/" />
+  <meta
+    name="twitter:card"
+    content="summary_large_image" />
+  <meta
+    name="twitter:site"
+    content="@tesla" />
+  <meta
+    name="twitter:description"
+    content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
+  <meta
+    name="twitter:title"
+    content="Tesla - Green IT" />
+  <meta
+    name="twitter:creator"
+    content="@tesla" />
+  <meta
+    name="twitter:url"
+    content="https://green-it.vercel.app/" />
 
-  <meta property="og:title" content="Tesla - Green IT" />
-  <meta property="og:description" content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://green-it.vercel.app/" />
-  <meta property="og:image" content="/images/home/hero-model-3.jpg" />
-  <meta property="og:site_name" content="Tesla - Green IT" />
-  <meta property="og:locale" content="en_US" />
+  <meta
+    property="og:title"
+    content="Tesla - Green IT" />
+  <meta
+    property="og:description"
+    content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
+  <meta
+    property="og:type"
+    content="website" />
+  <meta
+    property="og:url"
+    content="https://green-it.vercel.app/" />
+  <meta
+    property="og:image"
+    content="/images/home/hero-model-3.jpg" />
+  <meta
+    property="og:site_name"
+    content="Tesla - Green IT" />
+  <meta
+    property="og:locale"
+    content="en_US" />
 </svelte:head>
 
-<main class="flex flex-col w-full h-full">
+<main
+  class="flex flex-col w-full h-screen overflow-scroll snap-y snap-mandatory">
   <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
     <h1 class="w-32 ml-2">
       <Logo />
@@ -173,13 +222,4 @@
     </section>
   {/each}
   <HomeFooter />
-
-  <script>
-    const images = document.querySelectorAll("img");
-    images.forEach((img) => {
-      img.addEventListener("load", () => {
-        img.classList.remove("opacity-0");
-      });
-    });
-  </script>
 </main>

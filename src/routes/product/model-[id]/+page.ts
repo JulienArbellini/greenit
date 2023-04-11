@@ -1,7 +1,7 @@
 import { error } from "@sveltejs/kit";
 
 export const load = ({ params }) => {
-    if (!['x', 'y', 's', '3'].includes(params.id)) {
+    if (!['x', 'y', 's'].includes(params.id)) {
         throw error(404, {
             message: 'Not found'
         });
@@ -17,7 +17,7 @@ export const load = ({ params }) => {
         case 's':
             info = {
                 text: "bla bla",
-                model: `Model-S`,
+                model: `Model S`,
                 price: 34500
             },
             image = {
@@ -41,7 +41,7 @@ export const load = ({ params }) => {
         case 'x':
             info = {
                 text: "bla bla",
-                model: `Model-X`,
+                model: `Model X`,
                 price: 34500
             },
             image = {
@@ -85,6 +85,10 @@ export const load = ({ params }) => {
             }
 
             break;
+        default:
+            throw error(404, {
+                message: 'Not found'
+            });
     }
     return {
         info, image, AWD, Utility

@@ -5,14 +5,14 @@
   import OrderButton from "../../../components/OrderButton.svelte";
   import HistoryButton from "../../../components/HistoryButton.svelte";
   import Animation from "../../../components/Animation.svelte";
-  // console.log(data.image?.autopilot);
-  console.log(data.image?.Safety);
 </script>
 
 <main class="flex flex-col w-full h-full overflow-x-hidden">
   <div class="absolute px-3 py-2 w-full flex justify-between items-center z-10">
     <div class="w-32 ml-2">
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
     </div>
     <MenuButton text="Menu" />
   </div>
@@ -83,15 +83,15 @@
         </div>
         <div class="mt-3 text-sm font-extrabold text-black">5-Star Rating</div>
         <div class="mt-1">
-          {data?.info?.model} achieved NHTSA 5-star safety ratings in every category and
-          subcategory.
+          {data?.info?.model} achieved NHTSA 5-star safety ratings in every category
+          and subcategory.
         </div>
         <div class="mt-3 text-sm font-extrabold text-black">
           Top Safety Pick+
         </div>
         <div class="mt-1">
-          {data?.info?.model} received the IIHS Top Safety Pick+ award, with top ratings in
-          all crashworthiness and front crash prevention categories
+          {data?.info?.model} received the IIHS Top Safety Pick+ award, with top
+          ratings in all crashworthiness and front crash prevention categories
         </div>
       </div>
       <div
@@ -117,7 +117,9 @@
       </div>
       <div class="flex flex-col w-2/5">
         <div class="mt-3 text-gray-600 font-thin hidden sm:block">Utility</div>
-        <div class="text-xl hidden font-huge sm:block">A Place For Everything</div>
+        <div class="text-xl hidden font-huge sm:block">
+          A Place For Everything
+        </div>
         <div class=" flex-row gap-5 w-full mt-4 hidden sm:flex">
           <OrderButton text="Order Now" />
           <HistoryButton text="View Inventory" />
@@ -153,7 +155,9 @@
       class="h-1/6 w-full flex flex-col p-8 sm:p-0 sm:flex-row sm:justify-center sm:items-center gap-5">
       <div class="flex flex-col sm:justify-center sm:items-center sm:w-3/6">
         <div class="text-gray-600 font-thin">{data?.AWD?.title}</div>
-        <div class="text-black text-2xl font-big text-start ">{data?.AWD?.motor}</div>
+        <div class="text-black text-2xl font-big text-start ">
+          {data?.AWD?.motor}
+        </div>
         <div class="w-1/3 justify-center mt-3 hidden sm:flex">
           <OrderButton text="Order Now" />
         </div>
@@ -195,10 +199,10 @@
       <div class="sm:w-4/6 flex items-start">
         <div class="text-gray-400 text-sm w-full sm:w-3/5">
           With an elevated seating position and low dash, the driver has a
-          commanding view of the road ahead. The interior of {data?.info?.model} is simple
-          and clean, with a 15-inch touch screen, immersive sound system and an
-          expansive all-glass roof that creates extra headroom and provides a
-          seamless view of the sky. Compare Models
+          commanding view of the road ahead. The interior of {data?.info?.model}
+          is simple and clean, with a 15-inch touch screen, immersive sound system
+          and an expansive all-glass roof that creates extra headroom and provides
+          a seamless view of the sky. Compare Models
         </div>
       </div>
       <div class="w-full justify-center mt-3 flex sm:hidden">
@@ -241,14 +245,18 @@
       </div>
     </div>
   </section>
-
-
-
 </main>
-<div class="h-[10rem] mt-[7rem] w-full flex flex-col justify-center items-center">
-  <div class="text-xs w-[80%] text-gray-600 text-center sm:w-[40%]">Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation and voice commands. Access to features that use cellular data and third-party licenses are subject to change. Learn more about Standard Connectivity and any limitations.</div>
+<div
+  class="h-[10rem] mt-[7rem] w-full flex flex-col justify-center items-center">
+  <div class="text-xs w-[80%] text-gray-600 text-center sm:w-[40%]">
+    Certain high data usage vehicle features require at least Standard
+    Connectivity, including maps, navigation and voice commands. Access to
+    features that use cellular data and third-party licenses are subject to
+    change. Learn more about Standard Connectivity and any limitations.
+  </div>
 </div>
-<div class="mt-[3rem] mb-[3rem] h-[20rem] sm:mt-0 sm:mb-0 sm:h-24 sm:w-full flex flex-col sm:flex-row justify-center items-center gap-5 text-xs">
+<div
+  class="mt-[3rem] mb-[3rem] h-[20rem] sm:mt-0 sm:mb-0 sm:h-24 sm:w-full flex flex-col sm:flex-row justify-center items-center gap-5 text-xs">
   <div class="h-full flex flex-col justify-center items-center gap-5">
     <div class="h1">Tesla © 2023</div>
   </div>
