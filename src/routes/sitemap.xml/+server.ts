@@ -1,15 +1,15 @@
 export async function GET() {
-  const urls = [
-    'https://green-it.vercel.app/',
-  ];
+  const urls = ["https://green-it.vercel.app/"];
 
   const sitemap = urls
-    .map((url) => `
+    .map(
+      (url) => `
       <url>
         <loc>${url}</loc>
       </url>
-      `)
-    .join('');
+      `
+    )
+    .join("");
 
   return new Response(
     `
@@ -26,8 +26,8 @@ export async function GET() {
       </urlset>`.trim(),
     {
       headers: {
-        'Content-Type': 'application/xml'
-      }
+        "Content-Type": "application/xml",
+      },
     }
   );
 }
