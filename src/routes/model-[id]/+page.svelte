@@ -22,9 +22,9 @@
 
 <main class="flex flex-col w-full h-screen overflow-scroll">
   <header class="absolute px-3 py-2 w-full flex justify-between items-center z-10">
-    <h1 class="w-32 ml-2">
+    <a class="w-32 ml-2" href="/">
       <Logo color={data.page.logoColor} />
-    </h1>
+    </a>
     <MenuButton text="Menu" textColor={data.page.textColor} />
   </header>
   <section
