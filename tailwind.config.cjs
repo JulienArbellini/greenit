@@ -10,7 +10,11 @@ module.exports = {
         big: ["GothamSSM-Big", "sans-serif"],
         huge: ["GothamSSM-Large", "sans-serif"],
       },
+      animation: {
+        'fly-in': 'fly-in 0.5s ease-out',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };

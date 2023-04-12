@@ -22,3 +22,18 @@
   src: url("/fonts/Gothamssm-medium.woff2") format("woff2");
   font-display: swap;
 }
+
+
+@keyframes fly-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

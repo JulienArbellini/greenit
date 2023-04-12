@@ -73,6 +73,26 @@
           img.classList.remove("opacity-0");
         }
       });
+
+      function handleIntersection(entries, observer) {
+        entries.forEach(async (entry) => {
+          if (entry.isIntersecting) {
+            await new Promise((resolve) => setTimeout(resolve, 500));
+            entry.target.classList.remove("opacity-0");
+            entry.target.classList.add("animate-fly-in");
+          } else {
+            entry.target.classList.remove("animate-fly-in");
+            entry.target.classList.add("opacity-0");
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(handleIntersection);
+      const flyInElements = document.querySelectorAll(".fly-in");
+
+      flyInElements.forEach((element) => {
+        observer.observe(element);
+      });
     });
   </script>
 </svelte:head>
@@ -90,7 +110,7 @@
       textColor={data.page.textColor} />
   </header>
   <section
-    class="h-screen w-screen min-h-screen transition duration-500 relative snap-start">
+    class="h-screen w-screen min-h-screen transition duration-500 relative">
     <picture>
       <source
         srcset="/images/products/hero-model-{data.id}-mobile.avif"
@@ -130,7 +150,7 @@
     </picture>
     <div
       class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-36 pb-6 items-center {data
-        .page.textColor}">
+        .page.textColor} fly-in opacity-0">
       <div class="text-center">
         <h2 class="text-4xl font-huge mb-2">{data.page.title}</h2>
         <h2 class="underline text-sm underline-offset-4 font-bold mb-4">
@@ -189,7 +209,7 @@
       </picture>
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm  fly-in opacity-0">
         <div
           class="sm:flex w-64 mr-10 flex-col hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
           <div class="flex flex-col max-w-4xl text-sm">
@@ -235,7 +255,7 @@
       </div>
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in opacity-0">
         <div
           class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
           <div class="flex flex-col max-w-4xl text-sm">
@@ -306,7 +326,7 @@
   </section>
   <section class="w-screen flex flex-col">
     <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in opacity-0">
         <div
           class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
           <div class="flex flex-col max-w-4xl text-sm">
@@ -345,7 +365,7 @@
   </section>
   <section class="w-screen flex flex-col">
     <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in opacity-0">
         <div
           class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
           <div class="flex flex-col max-w-4xl text-sm">
@@ -409,7 +429,7 @@
       </picture>
 
       <div class="flex flex-col justify-center items-center w-screen">
-        <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+        <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in opacity-0">
           <div
             class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
             <div class="flex flex-col max-w-4xl text-sm">
@@ -449,7 +469,7 @@
       <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
         <div
           class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-          <div class="flex flex-col max-w-4xl text-sm">
+          <div class="flex flex-col max-w-4xl text-sm ">
             <h2 class="font-huge text-2xl">
               Order Model {data.id.toUpperCase()}
             </h2>
