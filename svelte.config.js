@@ -15,8 +15,8 @@ const config = {
     inlineStyleThreshold: 200000,
   },
   compilerOptions: {
-    preserveComments: false
-  }
+    preserveComments: false,
+  },
 };
 
 export default config;
