@@ -35,7 +35,7 @@
 <ImageLoader />
 <FlyIn />
 
-<main class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-auto">
+<main class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-y-auto overflow-x-hidden">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
     <h1 class="ml-2 w-32">
       <Logo />
