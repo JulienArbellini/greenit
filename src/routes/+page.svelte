@@ -1,12 +1,11 @@
 <script lang="ts">
-  import FlyIn from "../components/FlyIn.svelte";
   import HomeFooter from "../components/HomeFooter.svelte";
   import HomeHeaders from "../components/HomeHeaders.svelte";
-  import ImageLoader from "../components/ImageLoader.svelte";
   import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
   import ExtraProduct from "../components/home/ExtraProduct.svelte";
   import HomeHero from "../components/home/HomeHero.svelte";
+  import JsHelpers from "../components/JSHelpers.svelte";
 
   const extraProducts = [
     {
@@ -32,8 +31,7 @@
 </script>
 
 <HomeHeaders />
-<ImageLoader />
-<FlyIn />
+<JsHelpers />
 
 <main class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-y-auto overflow-x-hidden">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">

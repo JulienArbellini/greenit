@@ -1,19 +1,17 @@
 <script lang="ts">
-  import FlyIn from "../../components/FlyIn.svelte";
   import HeroPicture from "../../components/HeroPicture.svelte";
   import HomeFooter from "../../components/HomeFooter.svelte";
-  import ImageLoader from "../../components/ImageLoader.svelte";
   import Logo from "../../components/Logo.svelte";
   import MenuButton from "../../components/MenuButton.svelte";
   import ProductHeaders from "../../components/ProductHeaders.svelte";
   import SellingText from "../../components/product/SellingText.svelte";
+  import JsHelpers from "../../components/JSHelpers.svelte";
 
   export let data;
 </script>
 
 <ProductHeaders id={data.id} />
-<ImageLoader />
-<FlyIn />
+<JsHelpers />
 
 <main class="flex flex-col overflow-auto">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
