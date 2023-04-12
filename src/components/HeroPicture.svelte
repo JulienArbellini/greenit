@@ -36,7 +36,7 @@
     type="image/jpeg" />
   <img
     src="/images/{path}/hero-model-{id}.jpg"
-    loading="lazy"
+    loading="eager"
     class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
     alt="Electric car model {id} from Tesla" />
 </picture>

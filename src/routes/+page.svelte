@@ -42,8 +42,8 @@
     </h1>
     <MenuButton text="Menu" />
   </header>
-  {#each "s3xy" as l}
-    <HomeHero {l} />
+  {#each "s3xy" as l, i}
+    <HomeHero {l} {i} />
   {/each}
   <section
     class="flex h-screen min-h-screen w-screen snap-start flex-col items-center justify-around bg-black">
