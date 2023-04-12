@@ -226,16 +226,3 @@
   {/each}
   <HomeFooter />
 </main>
-
-<style>
-  .fly-in {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s, transform 1s;
-  }
-
-  .visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
