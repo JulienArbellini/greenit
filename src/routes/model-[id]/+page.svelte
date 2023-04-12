@@ -19,7 +19,7 @@
     content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
   <link
     rel="canonical"
-    href="https://green-it.vercel.app/" />
+    href="https://green-it.vercel.app/model-{data.id}" />
 
   <meta
     name="twitter:card"
@@ -38,7 +38,7 @@
     content="@tesla" />
   <meta
     name="twitter:url"
-    content="https://green-it.vercel.app/" />
+    content="https://green-it.vercel.app/model-{data.id}" />
 
   <meta
     property="og:title"
