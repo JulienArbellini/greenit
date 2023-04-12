@@ -1,5 +1,7 @@
 <script lang="ts">
+  import FlyIn from "../components/FlyIn.svelte";
   import HomeFooter from "../components/HomeFooter.svelte";
+  import ImageLoader from "../components/ImageLoader.svelte";
   import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
 </script>
@@ -59,42 +61,9 @@
   <meta
     property="og:locale"
     content="en_US" />
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const images = document.querySelectorAll("img");
-      images.forEach((img) => {
-        img.addEventListener("load", () => {
-          img.classList.remove("opacity-0");
-        });
-
-        if (img.complete) {
-          img.classList.remove("opacity-0");
-        }
-      });
-
-      function handleIntersection(entries, observer) {
-        entries.forEach(async (entry) => {
-          if (entry.isIntersecting) {
-            await new Promise((resolve) => setTimeout(resolve, 500));
-            entry.target.classList.remove("opacity-0");
-            entry.target.classList.add("animate-fly-in");
-          } else {
-            entry.target.classList.remove("animate-fly-in");
-            entry.target.classList.add("opacity-0");
-          }
-        });
-      }
-
-      const observer = new IntersectionObserver(handleIntersection);
-      const flyInElements = document.querySelectorAll(".fly-in");
-
-      flyInElements.forEach((element) => {
-        observer.observe(element);
-      });
-    });
-  </script>
 </svelte:head>
+<ImageLoader />
+<FlyIn />
 
 <main class="flex flex-col w-full h-screen overflow-auto snap-y snap-mandatory">
   <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
@@ -144,7 +113,7 @@
           alt="Electric car model {l} from Tesla" />
       </picture>
       <div
-        class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center fly-in opacity-0">
+        class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center fly-in">
         <h2 class="text-5xl font-bold mb-4">
           Model {l.toUpperCase()}
         </h2>
@@ -163,7 +132,7 @@
   {/each}
   <section
     class="w-screen min-h-screen h-screen snap-start flex flex-col items-center justify-around bg-black">
-    <span class="text-white text-4xl text-center  fly-in opacity-0"
+    <span class="text-white text-4xl text-center fly-in"
       >Discover the Roadster</span>
     <video
       class="w-full max-w-2xl md:rounded-xl"
@@ -182,7 +151,7 @@
     </video>
 
     <div
-      class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center p-4 items-center fly-in opacity-0">
+      class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center p-4 items-center fly-in">
       <button
         class="bg-gray-200 max-h-12 sm:w-64 text-black px-4 py-2 rounded shadow"
         >Soon Available</button>
@@ -226,7 +195,7 @@
           alt={p.alt} />
       </picture>
       <div
-        class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center fly-in opacity-0">
+        class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center fly-in">
         <div class="flex flex-col items-center">
           <h2 class="text-5xl mb-4">{p.title}</h2>
           <p class="text-md">{p.subtitle}</p>
