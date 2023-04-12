@@ -1,5 +1,5 @@
 export async function GET() {
-  const urls = ["https://green-it.vercel.app/"];
+  const urls = ["https://tesla.birdi.ng/"];
 
   const pages = [
     {
