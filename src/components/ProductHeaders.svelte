@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Tesla - Model {id}</title>
+  <title>Tesla - Model {id.toUpperCase()}</title>
   <meta
     name="description"
     content="Information about the Tesla Model {id.toUpperCase()}." />
