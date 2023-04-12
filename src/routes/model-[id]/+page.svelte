@@ -19,7 +19,7 @@
     content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
   <link
     rel="canonical"
-    href="https://green-it.vercel.app/model-{data.id}" />
+    href="https://tesla.birdi.ng/model-{data.id}" />
 
   <meta
     name="twitter:card"
@@ -38,7 +38,7 @@
     content="@tesla" />
   <meta
     name="twitter:url"
-    content="https://green-it.vercel.app/model-{data.id}" />
+    content="https://tesla.birdi.ng/model-{data.id}" />
 
   <meta
     property="og:title"
@@ -51,7 +51,7 @@
     content="website" />
   <meta
     property="og:url"
-    content="https://green-it.vercel.app/" />
+    content="https://tesla.birdi.ng/" />
   <meta
     property="og:image"
     content="/images/home/hero-model-{data.id}.jpg" />
@@ -77,7 +77,7 @@
   </script>
 </svelte:head>
 
-<main class="flex flex-col overflow-scroll">
+<main class="flex flex-col overflow-auto">
   <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
     <a
       class="w-32 ml-2"
@@ -184,7 +184,8 @@
             .skelId}-hero-safety-mobile.webp"
           loading="lazy"
           class="sm:max-w-[800px] object-cover opacity-0 transition-all duration-1000"
-          alt="Skeleton of an electric car model {data.page.skelId} from Tesla" />
+          alt="Skeleton of an electric car model {data.page
+            .skelId} from Tesla" />
       </picture>
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
@@ -277,5 +278,219 @@
     </div>
   </section>
 
+  <section class="w-screen flex flex-col items-center mt-10">
+    <picture>
+      <source
+        srcset="/images/products/seats-mobile.avif"
+        type="image/avif"
+        media="(max-width: 599px)" />
+      <source
+        srcset="/images/products/seats-mobile.jpg"
+        type="image/jpeg"
+        media="(max-width: 599px)" />
+      <source
+        srcset="/images/products/seats.avif"
+        type="image/avif" />
+      <source
+        srcset="/images/products/seats.jpg"
+        type="image/jpeg" />
+      <img
+        src="/images/products/seats.jpg"
+        loading="lazy"
+        class="h-full w-screen object-cover md:rounded-3xl md:max-w-3xl opacity-0 transition-all duration-1000"
+        alt="hero model-{data.id}" />
+    </picture>
+    <p class="text-center text-sm mt-5">
+      Versatile seating and storage for cargo and passengers
+    </p>
+  </section>
+  <section class="w-screen flex flex-col">
+    <div class="flex flex-col justify-center items-center w-screen">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+        <div
+          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
+          <div class="flex flex-col max-w-4xl text-sm">
+            <p class="font-big text-xl">All-Wheel Drive</p>
+            <h2 class="font-huge text-2xl">Dual Motor</h2>
+          </div>
+          <button
+            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+            >Order Now</button>
+          <button
+            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+            >View Inventory</button>
+        </div>
+        <div class="flex flex-col max-w-4xl text-sm">
+          <p class="font-big text-xl sm:hidden">All-Wheel Drive</p>
+          <h2 class="font-huge text-2xl sm:hidden">Dual Motor</h2>
+          <p class="pt-4">
+            Tesla All-Wheel Drive has two ultra-responsive, independent electric
+            motors that digitally control torque to the front and rear
+            wheels—for far better handling, traction and stability control.
+            Model {data.id.toUpperCase()} is capable in rain, snow, mud and off-road.
+            <span class="underline">Compare Models</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
+        <button
+          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+          >Order Now</button>
+        <button
+          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+          >View Inventory</button>
+      </div>
+    </div>
+  </section>
+  <section class="w-screen flex flex-col">
+    <div class="flex flex-col justify-center items-center w-screen">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+        <div
+          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
+          <div class="flex flex-col max-w-4xl text-sm">
+            <p class="font-big text-xl">Range</p>
+            <h2 class="font-huge text-2xl">Go Anywhere</h2>
+          </div>
+          <button
+            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+            >Order Now</button>
+          <button
+            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+            >View Inventory</button>
+        </div>
+        <div class="flex flex-col max-w-4xl text-sm">
+          <p class="font-big text-xl sm:hidden">Range</p>
+          <h2 class="font-huge text-2xl sm:hidden">Go Anywhere</h2>
+          <p class="pt-4">
+            Model {data.id.toUpperCase()} is fully electric, so you never need to
+            visit a gas station again. If you charge overnight at home, you can wake
+            up to a full battery every morning. And when you’re on the road, it’s
+            easy to plug in along the way—at any public station or with the Tesla
+            charging network. We currently have over 40,000 Superchargers worldwide,
+            with six new locations opening every week.
+            <span class="underline">Chat with a Tesla Advisor</span>
+            to learn more about Model {data.id.toUpperCase()} or
+            <span class="underline">schedule a demo drive</span> today.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
+        <button
+          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+          >Order Now</button>
+        <button
+          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+          >View Inventory</button>
+      </div>
+    </div>
+    <div class="w-screen flex flex-col items-center mt-10">
+      <picture>
+        <source
+          srcset="/images/products/autopilot-mobile.avif"
+          type="image/avif"
+          media="(max-width: 599px)" />
+        <source
+          srcset="/images/products/autopilot-mobile.jpg"
+          type="image/jpeg"
+          media="(max-width: 599px)" />
+        <source
+          srcset="/images/products/autopilot.avif"
+          type="image/avif" />
+        <source
+          srcset="/images/products/autopilot.jpg"
+          type="image/jpeg" />
+        <img
+          src="/images/products/autopilot.jpg"
+          loading="lazy"
+          class="h-full w-screen object-cover md:rounded-3xl md:max-w-3xl opacity-0 transition-all duration-1000"
+          alt="hero model-{data.id}" />
+      </picture>
+
+      <div class="flex flex-col justify-center items-center w-screen">
+        <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+          <div
+            class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
+            <div class="flex flex-col max-w-4xl text-sm">
+              <p class="font-big text-xl">Autopilot</p>
+              <h2 class="font-huge text-2xl">Future of Driving</h2>
+            </div>
+            <button
+              class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+              >Order Now</button>
+            <button
+              class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+              >View Inventory</button>
+          </div>
+          <div class="flex flex-col max-w-4xl text-sm">
+            <p class="font-big text-xl sm:hidden">Autopilot</p>
+            <h2 class="font-huge text-2xl sm:hidden">Future of Driving</h2>
+            <p class="pt-4">
+              Autopilot's advanced safety and convenience features are designed
+              to assist you with the most burdensome parts of driving.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
+          <button
+            class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+            >Order Now</button>
+          <button
+            class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+            >View Inventory</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="flex flex-col justify-center items-center w-screen h-screen">
+      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm">
+        <div
+          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
+          <div class="flex flex-col max-w-4xl text-sm">
+            <h2 class="font-huge text-2xl">
+              Order Model {data.id.toUpperCase()}
+            </h2>
+          </div>
+          <button
+            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+            >Order Now</button>
+          <button
+            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+            >View Inventory</button>
+        </div>
+        <div class="flex flex-col max-w-4xl text-sm">
+          <h2 class="font-huge text-2xl sm:hidden mb-10 w-full text-center">
+            Order Model {data.id.toUpperCase()}
+          </h2>
+
+          <picture>
+            <source
+              srcset="/images/products/order-{data.id}.avif"
+              type="image/avif" />
+            <source
+              srcset="/images/products/order-{data.id}.jpg"
+              type="image/jpeg" />
+            <img
+              src="/images/products/order-{data.id}.jpg"
+              loading="lazy"
+              class="h-full w-screen object-cover md:rounded-3xl md:max-w-full opacity-0 transition-all duration-1000"
+              alt="hero model-{data.id}" />
+          </picture>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
+        <button
+          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+          >Order Now</button>
+        <button
+          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
+          >View Inventory</button>
+      </div>
+    </div>
+  </section>
   <HomeFooter />
 </main>
