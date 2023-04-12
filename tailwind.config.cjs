@@ -3,9 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
-      // use the font from /fonts/gotthamssm.woff2
       fontFamily: {
-        medium: ["GothamSSM", "sans-serif"],
+        gotham: ["GothamSSM", "sans-serif"],
         big: ["GothamSSM-Big", "sans-serif"],
         huge: ["GothamSSM-Large", "sans-serif"],
       },
