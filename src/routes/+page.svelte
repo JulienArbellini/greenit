@@ -33,7 +33,8 @@
 <HomeHeaders />
 <JsHelpers />
 
-<main class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-y-auto overflow-x-hidden">
+<main
+  class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-y-auto overflow-x-hidden">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
     <h1 class="ml-2 w-32">
       <Logo />
@@ -41,7 +42,9 @@
     <MenuButton text="Menu" />
   </header>
   {#each "s3xy" as l, i}
-    <HomeHero {l} {i} />
+    <HomeHero
+      {l}
+      {i} />
   {/each}
   <section
     class="flex h-screen min-h-screen w-screen snap-start flex-col items-center justify-around bg-black">
