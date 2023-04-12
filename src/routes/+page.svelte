@@ -54,6 +54,7 @@
       loop
       muted
       controls
+      preload="none"
       poster="/images/home/thumb.webp"
       height="720"
       width="1152">
