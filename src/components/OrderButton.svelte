@@ -1,8 +1,3 @@
-<script lang="ts">
-  export let text: string;
-</script>
-
-<div
-  class="border-solid border-2 border-black rounded w-10/12 h-9 flex justify-center items-center text-black text-xs font-bold  hover:bg-black hover:text-white">
-  <div>{text}</div>
-</div>
+<button
+  class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
+  >Order Now</button>

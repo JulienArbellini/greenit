@@ -14,13 +14,11 @@
   id="sidebarToggle"
   class="hidden" />
 
-  <label
+<label
   for="sidebarToggle"
-  class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 right-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none"
->
+  class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 right-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none">
   <section
-    class="h-screen fixed bg-white z-50 bg-opacity-100 top-0 right-0 w-80 p-10 transition-all transform duration-300 translate-x-full"
-  >
+    class="h-screen fixed bg-white z-50 bg-opacity-100 top-0 right-0 w-80 p-10 transition-all transform duration-300 translate-x-full">
     <div class="flex w-full justify-end">
       <label
         for="sidebarToggle"
