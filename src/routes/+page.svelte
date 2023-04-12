@@ -1,67 +1,12 @@
 <script lang="ts">
   import FlyIn from "../components/FlyIn.svelte";
   import HomeFooter from "../components/HomeFooter.svelte";
+  import HomeHeaders from "../components/HomeHeaders.svelte";
   import ImageLoader from "../components/ImageLoader.svelte";
   import Logo from "../components/Logo.svelte";
   import MenuButton from "../components/MenuButton.svelte";
 </script>
-
-<svelte:head>
-  <title>Tesla - Green IT</title>
-  <link
-    rel="image_src"
-    href="/images/home/hero-model-3.jpg" />
-  <meta
-    name="description"
-    content="Tesla is accelerating the world';s transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta
-    name="keywords"
-    content="Tesla, Model S, Model Y, Model X, Model 3, Énergie" />
-  <link
-    rel="canonical"
-    href="https://tesla.birdi.ng/" />
-
-  <meta
-    name="twitter:card"
-    content="summary_large_image" />
-  <meta
-    name="twitter:site"
-    content="@tesla" />
-  <meta
-    name="twitter:description"
-    content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta
-    name="twitter:title"
-    content="Tesla - Green IT" />
-  <meta
-    name="twitter:creator"
-    content="@tesla" />
-  <meta
-    name="twitter:url"
-    content="https://tesla.birdi.ng/" />
-
-  <meta
-    property="og:title"
-    content="Tesla - Green IT" />
-  <meta
-    property="og:description"
-    content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses." />
-  <meta
-    property="og:type"
-    content="website" />
-  <meta
-    property="og:url"
-    content="https://tesla.birdi.ng/" />
-  <meta
-    property="og:image"
-    content="/images/home/hero-model-3.jpg" />
-  <meta
-    property="og:site_name"
-    content="Tesla - Green IT" />
-  <meta
-    property="og:locale"
-    content="en_US" />
-</svelte:head>
+<HomeHeaders />
 <ImageLoader />
 <FlyIn />
 
