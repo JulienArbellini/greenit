@@ -77,7 +77,7 @@
 </svelte:head>
 
 <main
-  class="flex flex-col w-full h-screen overflow-scroll snap-y snap-mandatory">
+  class="flex flex-col w-full h-screen overflow-auto snap-y snap-mandatory">
   <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
     <h1 class="w-32 ml-2">
       <Logo />
