@@ -76,8 +76,7 @@
   </script>
 </svelte:head>
 
-<main
-  class="flex flex-col w-full h-screen overflow-auto snap-y snap-mandatory">
+<main class="flex flex-col w-full h-screen overflow-auto snap-y snap-mandatory">
   <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
     <h1 class="w-32 ml-2">
       <Logo />
@@ -202,7 +201,7 @@
           src="/images/home/hero-{p.id}.jpg"
           loading="lazy"
           class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
-          alt="{p.alt}" />
+          alt={p.alt} />
       </picture>
       <div
         class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">

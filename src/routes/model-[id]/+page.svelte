@@ -184,7 +184,8 @@
             .skelId}-hero-safety-mobile.webp"
           loading="lazy"
           class="sm:max-w-[800px] object-cover opacity-0 transition-all duration-1000"
-          alt="Skeleton of an electric car model {data.page.skelId} from Tesla" />
+          alt="Skeleton of an electric car model {data.page
+            .skelId} from Tesla" />
       </picture>
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
@@ -471,7 +472,7 @@
               type="image/avif" />
             <source
               srcset="/images/products/order-{data.id}.jpg"
-              type="image/jpeg"/>
+              type="image/jpeg" />
             <img
               src="/images/products/order-{data.id}.jpg"
               loading="lazy"

@@ -4,28 +4,28 @@ export async function GET() {
   const pages = [
     {
       loc: `${urls[0]}`,
-      changefreq: 'monthly',
-      priority: 1
+      changefreq: "monthly",
+      priority: 1,
     },
     {
-      loc: `${urls[0]}` + 'model-s',
-      changefreq: 'monthly',
-      priority: 0.7
+      loc: `${urls[0]}` + "model-s",
+      changefreq: "monthly",
+      priority: 0.7,
     },
     {
-      loc: `${urls[0]}` + 'model-3',
-      changefreq: 'monthly',
-      priority: 0.7
+      loc: `${urls[0]}` + "model-3",
+      changefreq: "monthly",
+      priority: 0.7,
     },
     {
-      loc: `${urls[0]}` + 'model-x',
-      changefreq: 'monthly',
-      priority: 0.7
+      loc: `${urls[0]}` + "model-x",
+      changefreq: "monthly",
+      priority: 0.7,
     },
     {
-      loc: `${urls[0]}` + 'model-y',
-      changefreq: 'monthly',
-      priority: 0.7
+      loc: `${urls[0]}` + "model-y",
+      changefreq: "monthly",
+      priority: 0.7,
     },
   ];
 
