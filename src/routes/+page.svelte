@@ -122,7 +122,7 @@
           src="/images/home/hero-model-{l}.jpg"
           loading="lazy"
           class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
-          alt="hero model-{l}" />
+          alt="Electric car model {l} from Tesla" />
       </picture>
       <div
         class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">
@@ -167,7 +167,7 @@
         >Soon Available</button>
     </div>
   </section>
-  {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", singleBtn: true }] as p}
+  {#each [{ id: "solar-panels", title: "Solar Panels", subtitle: "Lowest Cost Solar Panels in America", alt: "A close-up of solar panels mounted on a rooftop" }, { id: "solar-roof", title: "Solar Roof", subtitle: "Produce Clean Energy From Your Roof", alt: "A house with a roof made of solar tiles" }, { id: "charger", title: "Accessories", subtitle: "Browser All Our Other Accessories", alt: "An assortment of charging cables and adapters for electric vehicles", singleBtn: true }] as p}
     <section
       class="h-screen w-screen min-h-screen transition duration-500 relative  snap-start">
       <picture>
@@ -202,7 +202,7 @@
           src="/images/home/hero-{p.id}.jpg"
           loading="lazy"
           class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
-          alt="hero {p.id}" />
+          alt="{p.alt}" />
       </picture>
       <div
         class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center">

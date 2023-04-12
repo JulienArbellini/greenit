@@ -126,7 +126,7 @@
         src="/images/products/hero-model-{data.id}.jpg"
         loading="lazy"
         class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
-        alt="hero model-{data.id}" />
+        alt="Electric car model {data.id} from Tesla" />
     </picture>
     <div
       class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-36 pb-6 items-center {data
@@ -184,7 +184,7 @@
             .skelId}-hero-safety-mobile.webp"
           loading="lazy"
           class="sm:max-w-[800px] object-cover opacity-0 transition-all duration-1000"
-          alt="hero model-{data.page.skelId}" />
+          alt="Skeleton of an electric car model {data.page.skelId} from Tesla" />
       </picture>
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
