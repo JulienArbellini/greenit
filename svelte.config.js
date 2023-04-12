@@ -14,6 +14,9 @@ const config = {
     adapter: adapter(),
     inlineStyleThreshold: 50000,
   },
+  compilerOptions: {
+    preserveComments: false
+  }
 };
 
 export default config;
