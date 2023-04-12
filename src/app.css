@@ -4,22 +4,17 @@
 
 @font-face {
   font-family: "GothamSSM";
-  src: url("/fonts/gothamssm.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "GothamSSM-Light";
-  src: url("/fonts/gothamssm-light.woff2") format("woff2");
+  src: url("/fonts/gothamssm_light.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "GothamSSM-Big";
-  src: url("/fonts/gothamssm-book.woff2") format("woff2");
+  src: url("/fonts/gotham_book.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "GothamSSM-Large";
-  src: url("/fonts/gothamssm-medium.woff2") format("woff2");
+  src: url("/fonts/gotham_medium.woff2") format("woff2");
   font-display: swap;
 }
 
