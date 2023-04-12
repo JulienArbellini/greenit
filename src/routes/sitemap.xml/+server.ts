@@ -1,11 +1,41 @@
 export async function GET() {
   const urls = ["https://green-it.vercel.app/"];
 
-  const sitemap = urls
+  const pages = [
+    {
+      loc: `${urls[0]}/`,
+      changefreq: 'monthly',
+      priority: 1
+    },
+    {
+      loc: `${urls[0]}/` + 'model-s',
+      changefreq: 'monthly',
+      priority: 0.7
+    },
+    {
+      loc: `${urls[0]}/` + 'model-3',
+      changefreq: 'monthly',
+      priority: 0.7
+    },
+    {
+      loc: `${urls[0]}/` + 'model-x',
+      changefreq: 'monthly',
+      priority: 0.7
+    },
+    {
+      loc: `${urls[0]}/` + 'model-y',
+      changefreq: 'monthly',
+      priority: 0.7
+    },
+  ];
+
+  const sitemap = pages
     .map(
-      (url) => `
+      (page) => `
       <url>
-        <loc>${url}</loc>
+        <loc>${page.loc}</loc>
+        <changefreq>${page.changefreq}</changefreq>
+        <priority>${page.priority}</priority>
       </url>
       `
     )
