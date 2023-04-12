@@ -38,7 +38,7 @@
       type="image/jpeg" />
     <img
       src="/images/home/hero-model-{l}.jpg"
-      loading="{i === 0 ? 'eager' : 'lazy'}"
+      loading="{i === 0 ? undefined : 'lazy'}"
       class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
       alt="Electric car model {l} from Tesla" />
   </picture>
