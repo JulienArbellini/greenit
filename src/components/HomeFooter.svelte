@@ -1,5 +1,5 @@
 <footer
-  class="w-screen py-5 flex justify-center items-center text-xs text-zinc-500 gap-3 flex-col sm:flex-row snap-end">
+  class="flex w-screen snap-end flex-col items-center justify-center gap-3 py-5 text-xs text-zinc-500 sm:flex-row">
   <span class="cursor-pointer">Tesla © 2023</span>
   <span class="cursor-pointer">Privacy & Legal</span>
   <span class="cursor-pointer">Vehicle Recalls</span>

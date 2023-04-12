@@ -35,9 +35,9 @@
 <ImageLoader />
 <FlyIn />
 
-<main class="flex flex-col w-full h-screen overflow-auto snap-y snap-mandatory">
-  <header class="fixed px-3 py-2 w-full flex justify-between items-center z-10">
-    <h1 class="w-32 ml-2">
+<main class="flex h-screen w-full snap-y snap-mandatory flex-col overflow-auto">
+  <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
+    <h1 class="ml-2 w-32">
       <Logo />
     </h1>
     <MenuButton text="Menu" />
@@ -46,8 +46,8 @@
     <HomeHero {l} />
   {/each}
   <section
-    class="w-screen min-h-screen h-screen snap-start flex flex-col items-center justify-around bg-black">
-    <span class="text-white text-4xl text-center fly-in"
+    class="flex h-screen min-h-screen w-screen snap-start flex-col items-center justify-around bg-black">
+    <span class="fly-in text-center text-4xl text-white"
       >Discover the Roadster</span>
     <video
       class="w-full max-w-2xl md:rounded-xl"
@@ -67,9 +67,9 @@
     </video>
 
     <div
-      class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center p-4 items-center fly-in">
+      class="fly-in flex flex-col items-center justify-center gap-2 p-4 sm:flex-row sm:gap-4">
       <button
-        class="bg-gray-200 max-h-12 sm:w-64 text-black px-4 py-2 rounded shadow"
+        class="max-h-12 rounded bg-gray-200 px-4 py-2 text-black shadow sm:w-64"
         >Soon Available</button>
     </div>
   </section>

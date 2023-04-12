@@ -10,8 +10,7 @@
   "bracketSpacing": true,
   "singleAttributePerLine": true,
   "endOfLine": "auto",
-  "tailwindConfig": "./tailwind.config.js",
-  "plugins": [
-      "prettier-plugin-tailwindcss"
-  ]
+  "tailwindConfig": "./tailwind.config.cjs",
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": false
 }

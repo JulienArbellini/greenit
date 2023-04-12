@@ -1,11 +1,11 @@
 <script lang="ts">
   export let text: string;
-  export let textColor: string = "black";
+  export let textColor = "black";
 </script>
 
 <label
   for="sidebarToggle"
-  class="cursor-pointer font-big px-4 py-[0.3rem] text-sm bg-black bg-opacity-10 transition-all backdrop-blur-lg duration-300 hover:bg-opacity-30 {textColor} rounded">
+  class="cursor-pointer bg-black bg-opacity-10 px-4 py-[0.3rem] font-big text-sm backdrop-blur-lg transition-all duration-300 hover:bg-opacity-30 {textColor} rounded">
   {text}
 </label>
 
@@ -16,9 +16,9 @@
 
 <label
   for="sidebarToggle"
-  class="w-screen h-screen bg-black backdrop-blur-[2px] bg-opacity-30 absolute top-0 right-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none">
+  class="pointer-events-none absolute top-0 right-0 z-50 h-screen w-screen bg-black bg-opacity-30 opacity-0 backdrop-blur-[2px] transition-opacity duration-300">
   <section
-    class="h-screen fixed bg-white z-50 bg-opacity-100 top-0 right-0 w-80 p-10 transition-all transform duration-300 translate-x-full">
+    class="fixed top-0 right-0 z-50 h-screen w-80 translate-x-full transform bg-white bg-opacity-100 p-10 transition-all duration-300">
     <div class="flex w-full justify-end">
       <label
         for="sidebarToggle"
@@ -29,7 +29,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6">
+          class="h-6 w-6">
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -40,7 +40,7 @@
     {#each ["x", "y", "s", "3"] as l}
       <a
         href="/model-{l}"
-        class="block px-4 py-2 hover:bg-gray-200 rounded-md">
+        class="block rounded-md px-4 py-2 hover:bg-gray-200">
         Model {l.toUpperCase()}
       </a>
     {/each}

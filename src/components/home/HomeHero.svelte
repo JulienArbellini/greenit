@@ -3,7 +3,7 @@
 </script>
 
 <section
-  class="h-screen w-screen min-h-screen transition duration-500 relative snap-start">
+  class="relative h-screen min-h-screen w-screen snap-start transition duration-500">
   <picture>
     <source
       srcset="/images/home/hero-model-{l}-mobile.avif"
@@ -42,17 +42,17 @@
       alt="Electric car model {l} from Tesla" />
   </picture>
   <div
-    class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-20 pb-10 items-center fly-in">
-    <h2 class="text-5xl font-bold mb-4">
+    class="fly-in absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-between pt-20 pb-10">
+    <h2 class="mb-4 text-5xl font-bold">
       Model {l.toUpperCase()}
     </h2>
     <div
-      class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center w-full p-4">
+      class="flex w-full flex-col justify-center gap-2 p-4 sm:flex-row sm:gap-4">
       <a
         href="/model-{l}"
-        class="bg-zinc-800 text-center sm:w-64 text-white px-4 py-2 rounded shadow"
+        class="rounded bg-zinc-800 px-4 py-2 text-center text-white shadow sm:w-64"
         >Custom Order</a>
-      <button class="bg-gray-200/75 sm:w-64 text-black px-4 py-2 rounded shadow"
+      <button class="rounded bg-gray-200/75 px-4 py-2 text-black shadow sm:w-64"
         >Demo Drive</button>
     </div>
   </div>

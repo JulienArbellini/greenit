@@ -1,7 +1,3 @@
-<script>
-  import { element } from "svelte/internal";
-</script>
-
 <svelte:head>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
