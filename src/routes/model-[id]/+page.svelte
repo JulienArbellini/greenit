@@ -1,10 +1,12 @@
 <script lang="ts">
   import FlyIn from "../../components/FlyIn.svelte";
+  import HeroPicture from "../../components/HeroPicture.svelte";
   import HomeFooter from "../../components/HomeFooter.svelte";
   import ImageLoader from "../../components/ImageLoader.svelte";
   import Logo from "../../components/Logo.svelte";
   import MenuButton from "../../components/MenuButton.svelte";
   import ProductHeaders from "../../components/ProductHeaders.svelte";
+  import SellingText from "../../components/product/SellingText.svelte";
 
   export let data;
 </script>
@@ -27,43 +29,9 @@
   </header>
   <section
     class="h-screen w-screen min-h-screen transition duration-500 relative">
-    <picture>
-      <source
-        srcset="/images/products/hero-model-{data.id}-mobile.avif"
-        type="image/avif"
-        media="(max-width: 599px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}-mobile.jpg"
-        type="image/jpeg"
-        media="(max-width: 599px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}-1280.avif"
-        type="image/avif"
-        media="(max-width: 1000px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}-1280.jpg"
-        type="image/jpeg"
-        media="(max-width: 1000px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}-1920.avif"
-        type="image/avif"
-        media="(max-width: 2000px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}-1920.jpg"
-        type="image/jpeg"
-        media="(max-width: 2000px)" />
-      <source
-        srcset="/images/products/hero-model-{data.id}.avif"
-        type="image/avif" />
-      <source
-        srcset="/images/products/hero-model-{data.id}.jpg"
-        type="image/jpeg" />
-      <img
-        src="/images/products/hero-model-{data.id}.jpg"
-        loading="lazy"
-        class="h-full w-screen object-cover opacity-0 transition-all duration-1000"
-        alt="Electric car model {data.id} from Tesla" />
-    </picture>
+    <HeroPicture
+      id={data.id}
+      path="products" />
     <div
       class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between pt-36 pb-6 items-center {data
         .page.textColor} fly-in">
@@ -126,22 +94,9 @@
     </div>
     <div class="flex flex-col justify-center items-center w-screen">
       <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in">
-        <div
-          class="sm:flex w-64 mr-10 flex-col hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-          <div class="flex flex-col max-w-4xl text-sm">
-            <p class="font-big text-xl">Safety</p>
-            <h2 class="font-huge text-2xl">Designed for Safety</h2>
-          </div>
-          <button
-            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-            >Order Now</button>
-          <button
-            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-            >View Inventory</button>
-        </div>
-        <div class="flex flex-col max-w-4xl text-sm">
-          <p class="font-big text-xl sm:hidden">Safety</p>
-          <h2 class="font-huge text-2xl sm:hidden">Designed for Safety</h2>
+        <SellingText
+          title="Safety"
+          subtitle="Designed for Safety">
           <p class="pt-4">
             Safety is the most important part of every Tesla. We design our
             vehicles to <span class="underline cursor-pointer"
@@ -158,36 +113,12 @@
             Model {data.id.toUpperCase()} received the IIHS Top Safety Pick+ award,
             with top ratings in all crashworthiness and front crash prevention categories.
           </p>
-        </div>
+        </SellingText>
       </div>
-      <div
-        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
-        <button
-          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-          >Order Now</button>
-        <button
-          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-          >View Inventory</button>
-      </div>
-    </div>
-    <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in">
-        <div
-          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-          <div class="flex flex-col max-w-4xl text-sm">
-            <p class="font-big text-xl">Utility</p>
-            <h2 class="font-huge text-2xl">A Place For Everything</h2>
-          </div>
-          <button
-            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-            >Order Now</button>
-          <button
-            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-            >View Inventory</button>
-        </div>
-        <div class="flex flex-col max-w-4xl text-sm">
-          <p class="font-big text-xl sm:hidden">Utility</p>
-          <h2 class="font-huge text-2xl sm:hidden">A Place For Everything</h2>
+      <div class="flex flex-col justify-center items-center w-screen">
+        <SellingText
+          title="Utility"
+          subtitle="A Place For Everything">
           <p class="pt-4">
             Model {data.id.toUpperCase()} provides maximum versatility—able to carry
             7 passengers and their cargo. Each second row seat folds flat independently,
@@ -200,16 +131,7 @@
             or <span class="underline cursor-pointer">schedule a demo</span> drive
             today.
           </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
-        <button
-          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-          >Order Now</button>
-        <button
-          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-          >View Inventory</button>
+        </SellingText>
       </div>
     </div>
   </section>
@@ -241,86 +163,34 @@
     </p>
   </section>
   <section class="w-screen flex flex-col">
-    <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in">
-        <div
-          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-          <div class="flex flex-col max-w-4xl text-sm">
-            <p class="font-big text-xl">All-Wheel Drive</p>
-            <h2 class="font-huge text-2xl">Dual Motor</h2>
-          </div>
-          <button
-            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-            >Order Now</button>
-          <button
-            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-            >View Inventory</button>
-        </div>
-        <div class="flex flex-col max-w-4xl text-sm">
-          <p class="font-big text-xl sm:hidden">All-Wheel Drive</p>
-          <h2 class="font-huge text-2xl sm:hidden">Dual Motor</h2>
-          <p class="pt-4">
-            Tesla All-Wheel Drive has two ultra-responsive, independent electric
-            motors that digitally control torque to the front and rear
-            wheels—for far better handling, traction and stability control.
-            Model {data.id.toUpperCase()} is capable in rain, snow, mud and off-road.
-            <span class="underline">Compare Models</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
-        <button
-          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-          >Order Now</button>
-        <button
-          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-          >View Inventory</button>
-      </div>
-    </div>
+    <SellingText
+      title="All-Wheel Drive"
+      subtitle="Dual Motor">
+      <p class="pt-4">
+        Tesla All-Wheel Drive has two ultra-responsive, independent electric
+        motors that digitally control torque to the front and rear wheels—for
+        far better handling, traction and stability control. Model {data.id.toUpperCase()}
+        is capable in rain, snow, mud and off-road.
+        <span class="underline">Compare Models</span>
+      </p>
+    </SellingText>
   </section>
   <section class="w-screen flex flex-col">
-    <div class="flex flex-col justify-center items-center w-screen">
-      <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in">
-        <div
-          class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-          <div class="flex flex-col max-w-4xl text-sm">
-            <p class="font-big text-xl">Range</p>
-            <h2 class="font-huge text-2xl">Go Anywhere</h2>
-          </div>
-          <button
-            class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-            >Order Now</button>
-          <button
-            class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-            >View Inventory</button>
-        </div>
-        <div class="flex flex-col max-w-4xl text-sm">
-          <p class="font-big text-xl sm:hidden">Range</p>
-          <h2 class="font-huge text-2xl sm:hidden">Go Anywhere</h2>
-          <p class="pt-4">
-            Model {data.id.toUpperCase()} is fully electric, so you never need to
-            visit a gas station again. If you charge overnight at home, you can wake
-            up to a full battery every morning. And when you’re on the road, it’s
-            easy to plug in along the way—at any public station or with the Tesla
-            charging network. We currently have over 40,000 Superchargers worldwide,
-            with six new locations opening every week.
-            <span class="underline">Chat with a Tesla Advisor</span>
-            to learn more about Model {data.id.toUpperCase()} or
-            <span class="underline">schedule a demo drive</span> today.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
-        <button
-          class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-          >Order Now</button>
-        <button
-          class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-          >View Inventory</button>
-      </div>
-    </div>
+    <SellingText
+      title="Range"
+      subtitle="Go Anywhere">
+      <p class="pt-4">
+        Model {data.id.toUpperCase()} is fully electric, so you never need to visit
+        a gas station again. If you charge overnight at home, you can wake up to
+        a full battery every morning. And when you’re on the road, it’s easy to plug
+        in along the way—at any public station or with the Tesla charging network.
+        We currently have over 40,000 Superchargers worldwide, with six new locations
+        opening every week.
+        <span class="underline">Chat with a Tesla Advisor</span>
+        to learn more about Model {data.id.toUpperCase()} or
+        <span class="underline">schedule a demo drive</span> today.
+      </p>
+    </SellingText>
     <div class="w-screen flex flex-col items-center mt-10">
       <picture>
         <source
@@ -344,40 +214,14 @@
           alt="hero model-{data.id}" />
       </picture>
 
-      <div class="flex flex-col justify-center items-center w-screen">
-        <div class="flex flex-col sm:flex-row max-w-4xl p-10 text-sm fly-in">
-          <div
-            class="sm:flex flex-col w-64 mr-10  hidden sm:visible gap-4 sm:gap-4 justify-center p-4 items-center text-sm">
-            <div class="flex flex-col max-w-4xl text-sm">
-              <p class="font-big text-xl">Autopilot</p>
-              <h2 class="font-huge text-2xl">Future of Driving</h2>
-            </div>
-            <button
-              class="bg-white  w-48 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-              >Order Now</button>
-            <button
-              class="bg-gray-100 w-48 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-              >View Inventory</button>
-          </div>
-          <div class="flex flex-col max-w-4xl text-sm">
-            <p class="font-big text-xl sm:hidden">Autopilot</p>
-            <h2 class="font-huge text-2xl sm:hidden">Future of Driving</h2>
-            <p class="pt-4">
-              Autopilot's advanced safety and convenience features are designed
-              to assist you with the most burdensome parts of driving.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col sm:hidden gap-4 sm:gap-4 justify-center w-full p-4 items-center text-sm">
-          <button
-            class="bg-white  w-80 text-black hover:bg-zinc-800 hover:text-white transition-all duration-300 px-4 py-2 rounded shadow border-[3px] border-zinc-800"
-            >Order Now</button>
-          <button
-            class="bg-gray-100 w-80 text-black px-4 py-2 rounded hover:bg-gray-200 transition-all duration-300"
-            >View Inventory</button>
-        </div>
-      </div>
+      <SellingText
+        title="Autopilot"
+        subtitle="Future of Driving">
+        <p class="pt-4">
+          Autopilot's advanced safety and convenience features are designed to
+          assist you with the most burdensome parts of driving.
+        </p>
+      </SellingText>
     </div>
   </section>
   <section>
