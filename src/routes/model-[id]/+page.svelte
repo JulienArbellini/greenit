@@ -91,28 +91,29 @@
       </picture>
     </div>
     <div class="flex w-screen flex-col items-center justify-center">
-      <div class="fly-in flex max-w-4xl flex-col p-10 text-sm sm:flex-row">
         <SellingText
           title="Safety"
           subtitle="Designed for Safety">
-          <p class="pt-4">
-            Safety is the most important part of every Tesla. We design our
-            vehicles to <span class="cursor-pointer underline"
-              >exceed safety standards</span
-            >.
-          </p>
-          <p class="pt-5 font-big">5-Star Rating</p>
-          <p>
-            Model {data.id.toUpperCase()} achieved NHTSA 5-star safety ratings in
-            every category and subcategory.
-          </p>
-          <p class="pt-5 font-big">MTop Safety Pick+</p>
-          <p>
-            Model {data.id.toUpperCase()} received the IIHS Top Safety Pick+ award,
-            with top ratings in all crashworthiness and front crash prevention categories.
-          </p>
+          <div>
+            <p class="pt-4">
+              Safety is the most important part of every Tesla. We design our
+              vehicles to <span class="cursor-pointer underline"
+                >exceed safety standards</span
+              >.
+            </p>
+            <p class="pt-5 font-big">5-Star Rating</p>
+            <p>
+              Model {data.id.toUpperCase()} achieved NHTSA 5-star safety ratings
+              in every category and subcategory.
+            </p>
+            <p class="pt-5 font-big">MTop Safety Pick+</p>
+            <p>
+              Model {data.id.toUpperCase()} received the IIHS Top Safety Pick+ award,
+              with top ratings in all crashworthiness and front crash prevention
+              categories.
+            </p>
+          </div>
         </SellingText>
-      </div>
       <div class="flex w-screen flex-col items-center justify-center">
         <SellingText
           title="Utility"
