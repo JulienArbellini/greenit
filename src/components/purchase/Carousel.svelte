@@ -364,9 +364,9 @@
     </label>
   </div>
 
-  <div class="flex justify-center items-center w-screen">
+  <div class="flex w-screen items-center justify-center">
     <div
-      class="text-huge fixed bottom-0 flex h-20 max-w-xl w-full items-center justify-center rounded-t-2xl bg-gray-100">
+      class="text-huge fixed bottom-0 flex h-20 w-full max-w-xl items-center justify-center rounded-t-2xl bg-gray-100">
       <p id="price">Vehicle Price</p>
     </div>
   </div>

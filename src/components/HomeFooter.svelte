@@ -3,7 +3,9 @@
   <span class="cursor-pointer">Tesla © 2023</span>
   <span class="cursor-pointer">Privacy & Legal</span>
   <span class="cursor-pointer">Vehicle Recalls</span>
-  <span class="cursor-pointer">Contact</span>
+  <a
+    href="/contact"
+    class="cursor-pointer">Contact</a>
   <span class="cursor-pointer">Careers</span>
   <span class="cursor-pointer">News</span>
   <span class="cursor-pointer">Engage</span>
