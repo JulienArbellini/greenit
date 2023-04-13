@@ -1,9 +1,12 @@
 <script>
   import Logo from "../Logo.svelte";
   import MenuButton from "../MenuButton.svelte";
+  import ProductHeaders from "../ProductHeaders.svelte";
 </script>
 
-<div class="container flex w-full flex-col items-center">
+<ProductHeaders id={'s'} />
+
+<div class="container flex w-full flex-col mb-20 items-center">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
     <a
       href="/"
@@ -204,7 +207,7 @@
     </label>
   </div>
 
-  <p class="mt-10 w-full rounded-lg text-center font-big text-xl mt-20">Wheel</p>
+  <p class=" mt-20 w-full rounded-lg text-center font-big text-xl">Wheel</p>
   <div class="wheel-container mt-10 w-full max-w-xl">
     <input
       type="radio"
@@ -296,11 +299,128 @@
         class="h-full w-full object-cover" />
     </label>
   </div>
+  <p class=" mt-20 w-full rounded-lg text-center font-big text-xl">Wheel</p>
+  <div class="interior-container mt-10 w-full max-w-xl">
+    <input
+      type="radio"
+      name="interior"
+      id="interior-1"
+      class="color-option"
+      checked />
+    <input
+      type="radio"
+      name="interior"
+      id="interior-2"
+      class="color-option" />
+    <input
+      type="radio"
+      name="interior"
+      id="interior-3"
+      class="color-option" />
+
+    <img
+      src="/images/purchase/interior-1.avif"
+      alt="Interior 1"
+      class="car-image"
+      id="interior-1" />
+
+    <img
+      src="/images/purchase/interior-2.avif"
+      alt="White Car Wheel 2"
+      class="car-image"
+      id="interior-2" />
+
+    <img
+      src="/images/purchase/interior-3.avif"
+      alt="Blue Car Wheel 1"
+      class="car-image"
+      id="interior-3" />
+  </div>
+  <div class="mt-5 flex h-10 w-full mb-24 max-w-xl flex-row justify-center gap-2">
+    <label
+      for="interior-1"
+      class="cursor-pointer">
+      <img
+        src="/images/purchase/icon-interior-1.avif"
+        alt="White Car"
+        class="h-full w-full object-cover" />
+    </label>
+    <label
+      for="interior-2"
+      class="cursor-pointer">
+      <img
+        src="/images/purchase/icon-interior-2.avif"
+        alt="Blue Car"
+        class="h-full w-full object-cover" />
+    </label>
+    <label
+      for="interior-3"
+      class="cursor-pointer">
+      <img
+        src="/images/purchase/icon-interior-3.avif"
+        alt="Blue Car"
+        class="h-full w-full object-cover" />
+    </label>
+  </div>
+
+  <div
+    class="text-huge fixed bottom-0 flex h-20 w-screen items-center justify-center rounded-t-2xl bg-gray-100">
+    <p id="price"></p>
+  </div>
 </div>
 
 <style>
   .demo-image > img {
     display: none;
+  }
+
+  :has(#white:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
+    content: "$84,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#red:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
+    content: "$87,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
+    content: "$86,490";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#white:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
+    content: "$89,490";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#red:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
+    content: "$91,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
+    content: "$90,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#white:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$86,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#red:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$89,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$88,490";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#white:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$91,490";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#red:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$93,990";
+    font-family: "GothamSSM-Big";
+  }
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
+    content: "$92,990";
+    font-family: "GothamSSM-Big";
   }
 
   :has(#white:checked) :has(#wheel-1:checked) #white-wheel-1 {
@@ -363,6 +483,18 @@
     display: block;
   }
 
+  :has(#interior-1:checked) #interior-1 {
+    display: block;
+  }
+
+  :has(#interior-2:checked) #interior-2 {
+    display: block;
+  }
+
+  :has(#interior-3:checked) #interior-3 {
+    display: block;
+  }
+
   :has(#black:checked) label[for="black"] {
     outline: 2px solid #3e6ae1;
   }
@@ -388,6 +520,18 @@
   }
 
   :has(#white:checked) label[for="white"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  :has(#interior-1:checked) label[for="interior-1"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  :has(#interior-2:checked) label[for="interior-2"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  :has(#interior-3:checked) label[for="interior-3"] {
     outline: 2px solid #3e6ae1;
   }
 
@@ -447,7 +591,7 @@
   }
 
   :has(#wheel-1:checked) label[for="wheel-1"]::after {
-    content: "19\" Tempest Wheels\AIncluded";
+    content: '19" Tempest Wheels\AIncluded';
     font-family: "GothamSSM-Large";
     white-space: pre-wrap;
     width: 100%;
@@ -457,7 +601,7 @@
     position: absolute;
   }
   :has(#wheel-2:checked) label[for="wheel-2"]::after {
-    content: "21\" Arachnid Wheels\A$4,500";
+    content: '21" Arachnid Wheels\A$4,500';
     font-family: "GothamSSM-Large";
     white-space: pre-wrap;
     width: 100%;
@@ -466,10 +610,45 @@
     padding-top: 1rem;
     position: absolute;
   }
+  :has(#interior-1:checked) label[for="interior-1"]::after {
+    content: "All Black\AIncluded";
+    font-family: "GothamSSM-Large";
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
+  :has(#interior-2:checked) label[for="interior-2"]::after {
+    content: "Black and White\A$2,000";
+    font-family: "GothamSSM-Large";
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
+
+  :has(#interior-3:checked) label[for="interior-3"]::after {
+    content: "Cream\A$2,000";
+    font-family: "GothamSSM-Large";
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
+
   .image-container {
     position: relative;
   }
   .wheel-container {
+    position: relative;
+  }
+  .interior-container {
     position: relative;
   }
 
@@ -478,7 +657,7 @@
   }
 
   input[type="radio"] {
-    display: none;
+    display: none !important;
   }
 
   label {

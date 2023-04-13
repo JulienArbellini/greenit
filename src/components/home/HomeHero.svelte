@@ -50,7 +50,7 @@
     <div
       class="flex w-full flex-col justify-center gap-2 p-4 sm:flex-row sm:gap-4">
       <a
-        href="/model-{l}"
+        href="/purchase/model-{l}"
         class="rounded bg-zinc-800 px-4 py-2 text-center text-white shadow sm:w-64"
         >Custom Order</a>
       <button class="rounded bg-gray-200/75 px-4 py-2 text-black shadow sm:w-64"
