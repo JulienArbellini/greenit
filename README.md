@@ -67,6 +67,8 @@ Robots.txt generated.
 
 CSS and JavaScript code inlined in the HTML to reduce requests.
 
+Tailwind classes are sorted by specificity to reduce the size of the CSS once compressed.
+
 ## Score
 
 ### Google Lighthouse
