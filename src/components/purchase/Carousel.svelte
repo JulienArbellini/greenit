@@ -4,9 +4,9 @@
   import ProductHeaders from "../ProductHeaders.svelte";
 </script>
 
-<ProductHeaders id={'s'} />
+<ProductHeaders id={"s"} />
 
-<div class="container flex w-full flex-col mb-20 items-center">
+<div class="container mb-20 flex w-full flex-col items-center">
   <header class="fixed z-10 flex w-full items-center justify-between px-3 py-2">
     <a
       href="/"
@@ -336,7 +336,8 @@
       class="car-image"
       id="interior-3" />
   </div>
-  <div class="mt-5 flex h-10 w-full mb-24 max-w-xl flex-row justify-center gap-2">
+  <div
+    class="mt-5 mb-24 flex h-10 w-full max-w-xl flex-row justify-center gap-2">
     <label
       for="interior-1"
       class="cursor-pointer">
@@ -363,9 +364,11 @@
     </label>
   </div>
 
-  <div
-    class="text-huge fixed bottom-0 flex h-20 w-screen items-center justify-center rounded-t-2xl bg-gray-100">
-    <p id="price"></p>
+  <div class="flex justify-center items-center w-screen">
+    <div
+      class="text-huge fixed bottom-0 flex h-20 max-w-xl w-full items-center justify-center rounded-t-2xl bg-gray-100">
+      <p id="price">Vehicle Price</p>
+    </div>
   </div>
 </div>
 
@@ -374,52 +377,86 @@
     display: none;
   }
 
-  :has(#white:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
-    content: "$84,990";
+  :has(#white:checked):has(#wheel-1:checked):has(#interior-1:checked)
+    #price::after {
+    content: " $84,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#red:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
-    content: "$87,990";
+  :has(#red:checked):has(#wheel-1:checked):has(#interior-1:checked)
+    #price::after {
+    content: " $87,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(#interior-1:checked) #price::after {
-    content: "$86,490";
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(
+      #interior-1:checked
+    )
+    #price::after {
+    content: " $86,490";
     font-family: "GothamSSM-Big";
   }
-  :has(#white:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
-    content: "$89,490";
+  :has(#white:checked):has(#wheel-2:checked):has(#interior-1:checked)
+    #price::after {
+    content: " $89,490";
     font-family: "GothamSSM-Big";
   }
-  :has(#red:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
-    content: "$91,990";
+  :has(#red:checked):has(#wheel-2:checked):has(#interior-1:checked)
+    #price::after {
+    content: " $91,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(#interior-1:checked) #price::after {
-    content: "$90,990";
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(
+      #interior-1:checked
+    )
+    #price::after {
+    content: " $90,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#white:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$86,990";
+  :has(#white:checked):has(#wheel-1:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $86,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#red:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$89,990";
+  :has(#red:checked):has(#wheel-1:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $89,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$88,490";
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-1:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $88,490";
     font-family: "GothamSSM-Big";
   }
-  :has(#white:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$91,490";
+  :has(#white:checked):has(#wheel-2:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $91,490";
     font-family: "GothamSSM-Big";
   }
-  :has(#red:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$93,990";
+  :has(#red:checked):has(#wheel-2:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $93,990";
     font-family: "GothamSSM-Big";
   }
-  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(#interior-2:checked, #interior-3:checked) #price::after {
-    content: "$92,990";
+  :has(#blue:checked, #grey:checked, #black:checked):has(#wheel-2:checked):has(
+      #interior-2:checked,
+      #interior-3:checked
+    )
+    #price::after {
+    content: " $92,990";
     font-family: "GothamSSM-Big";
   }
 
