@@ -171,7 +171,7 @@
       <img
         src="/images/purchase/color-white.avif"
         alt="White Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="blue"
@@ -179,7 +179,7 @@
       <img
         src="/images/purchase/color-blue.avif"
         alt="Blue Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="grey"
@@ -187,7 +187,7 @@
       <img
         src="/images/purchase/color-grey.avif"
         alt="Grey Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="red"
@@ -195,7 +195,7 @@
       <img
         src="/images/purchase/color-red.avif"
         alt="Red Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="black"
@@ -203,7 +203,7 @@
       <img
         src="/images/purchase/color-black.avif"
         alt="Black Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
   </div>
 
@@ -288,7 +288,7 @@
       <img
         src="/images/purchase/wheel-1.avif"
         alt="White Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="wheel-2"
@@ -296,7 +296,7 @@
       <img
         src="/images/purchase/wheel-2.avif"
         alt="Blue Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
   </div>
   <p class=" mt-20 w-full rounded-lg text-center font-big text-xl">Wheel</p>
@@ -344,7 +344,7 @@
       <img
         src="/images/purchase/icon-interior-1.avif"
         alt="White Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="interior-2"
@@ -352,7 +352,7 @@
       <img
         src="/images/purchase/icon-interior-2.avif"
         alt="Blue Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
     <label
       for="interior-3"
@@ -360,7 +360,7 @@
       <img
         src="/images/purchase/icon-interior-3.avif"
         alt="Blue Car"
-        class="h-full w-full object-cover" />
+        class="h-10 w-10 object-cover" />
     </label>
   </div>
 
