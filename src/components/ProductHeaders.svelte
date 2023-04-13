@@ -16,14 +16,14 @@
     content="Information about the Tesla Model {id.toUpperCase()}." />
   <meta
     name="twitter:title"
-    content="Tesla - Model {id}" />
+    content="Tesla - Model {id.toUpperCase()}" />
   <meta
     name="twitter:url"
     content="https://tesla.birdi.ng/model-{id}" />
 
   <meta
     property="og:title"
-    content="Tesla - Model {id}" />
+    content="Tesla - Model {id.toUpperCase()}" />
   <meta
     property="og:description"
     content="Information about the Tesla Model {id.toUpperCase()}." />
