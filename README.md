@@ -11,6 +11,7 @@ Size: 169kb -> 13kb
 Use font swap.
 
 ### Images
+
 Images converted to AVIF and WebP or MozJPEG format.
 
 Images are lazy loaded.
@@ -18,13 +19,16 @@ Images are lazy loaded.
 Responsive images with multiple breakpoints.
 
 ### SEO
+
 Relevant meta tags added.
 
 ### Favicon
+
 Default to an SVG favicon, then fallback to PNG.
 Add a fake favicon.ico to avoid 404 errors.
 
 ### Hosting
+
 Deployed to Vercel, hard cached behind Cloudflare.
 
 Serverless function = zero energy consumption while cached.
@@ -32,6 +36,7 @@ Serverless function = zero energy consumption while cached.
 Serverless function located in the US in case of cache bust, because that's the main market of Tesla.
 
 ### Framework
+
 SvelteKit with no client side rendering.
 No JS shipped to the client.
 Total of 600bytes of JavaScript for text animations and image transitions
@@ -50,7 +55,6 @@ Use of semantic HTML tags.
 
 Alt tags added to images.
 
-
 ### SEO
 
 Add OG and Twitter tags.
@@ -66,6 +70,7 @@ CSS and JavaScript code inlined in the HTML to reduce requests.
 ## Score
 
 ### Google Lighthouse
+
 [Resultat LightHouse](https://pagespeed.web.dev/analysis/https-tesla-birdi-ng/vjt4de451h?form_factor=mobile)
 
 Score LightHouse:
@@ -93,7 +98,6 @@ Detail LightHouse Desktop:
 [Resultat EcoIndex](https://www.ecoindex.fr/resultat/?id=d7e45269-2189-4324-8eaf-70bce2cbd42c)
 
 ![](images/ecoindex.jpg)
-
 
 ### EcoIndex Site de Tesla
 
