@@ -96,6 +96,81 @@
 </div>
 
 <style>
+  .image-container:has(#black:checked) + div > label[for="black"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  .image-container:has(#blue:checked) + div > label[for="blue"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  .image-container:has(#grey:checked) + div > label[for="grey"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  .image-container:has(#red:checked) + div > label[for="red"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  .image-container:has(#white:checked) + div > label[for="white"] {
+    outline: 2px solid #3e6ae1;
+  }
+
+  .image-container:has(#white:checked) + div > label[for="white"]::after {
+    content: "Pearl White Multi-Coat\AIncluded";
+    font-family: 'GothamSSM-Large';
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
+
+  .image-container:has(#black:checked) + div > label[for="black"]::after {
+    content: "Solid Black\A$1,500";
+    font-family: 'GothamSSM-Large';
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
+
+.image-container:has(#blue:checked) + div > label[for="blue"]::after {
+  content: "Deep Blue Metallic\A$1,500";
+  font-family: 'GothamSSM-Large';
+  white-space: pre-wrap;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  padding-top: 1rem;
+  position: absolute;
+}
+
+.image-container:has(#grey:checked) + div > label[for="grey"]::after {
+  content: "Midnight Silver Metallic\A$1,500";
+  font-family: 'GothamSSM-Large';
+  white-space: pre-wrap;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  padding-top: 1rem;
+  position: absolute;
+}
+
+
+.image-container:has(#red:checked) + div > label[for="red"]::after {
+    content: "Ultra Red\A$3,000";
+    font-family: 'GothamSSM-Large';
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 1rem;
+    position: absolute;
+  }
   .image-container {
     position: relative;
   }
@@ -106,6 +181,10 @@
 
   input[type="radio"] {
     display: none;
+  }
+
+  label {
+    border-radius: 50%;
   }
 
   .color-option:checked#blue ~ .car-image#blue-img {
@@ -127,4 +206,6 @@
   .color-option:checked#black ~ .car-image#black-img {
     display: block;
   }
-</style>
+
+
+</style>  
