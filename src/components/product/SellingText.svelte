@@ -11,9 +11,9 @@
         <p class="font-big text-xl">{title}</p>
         <h2 class="font-huge text-2xl">{subtitle}</h2>
       </div>
-      <button
-        class="w-48  rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
-        >Order Now</button>
+      <a href="/purchase/model-s"
+        class="w-48 text-center rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
+        >Order Now</a>
       <button
         class="w-48 rounded bg-gray-100 px-4 py-2 text-black transition-all duration-300 hover:bg-gray-200"
         >View Inventory</button>
@@ -26,9 +26,9 @@
   </div>
   <div
     class="flex w-full flex-col items-center justify-center gap-4 p-4 text-sm sm:hidden sm:gap-4">
-    <button
-      class="w-80 rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
-      >Order Now</button>
+    <a href="/purchase/model-s"
+      class="w-80 text-center rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
+      >Order Now</a>
     <button
       class="w-80 rounded bg-gray-100 px-4 py-2 text-black transition-all duration-300 hover:bg-gray-200"
       >View Inventory</button>
