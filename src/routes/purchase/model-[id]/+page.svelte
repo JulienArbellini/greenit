@@ -2,6 +2,6 @@
   import Carousel from "../../../components/purchase/Carousel.svelte";
 </script>
 
-<main class="flex flex-col items-center w-screen">
-    <Carousel />
-</main> 
+<main class="flex w-screen flex-col items-center">
+  <Carousel />
+</main>
