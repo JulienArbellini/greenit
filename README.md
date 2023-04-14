@@ -18,10 +18,6 @@ Images are lazy loaded.
 
 Responsive images with multiple breakpoints.
 
-### SEO
-
-Relevant meta tags added.
-
 ### Favicon
 
 Default to an SVG favicon, then fallback to PNG.
@@ -34,6 +30,8 @@ Deployed to Vercel, hard cached behind Cloudflare.
 Serverless function = zero energy consumption while cached.
 
 Serverless function located in the US in case of cache bust, because that's the main market of Tesla.
+
+Compression GZIP/Brotli enabled.
 
 ### Framework
 
