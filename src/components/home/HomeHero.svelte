@@ -43,7 +43,7 @@
       alt="Electric car model {l} from Tesla" />
   </picture>
   <div
-    class="fly-in absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-between pt-20 pb-10">
+    class="fly-in absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-between pb-10 pt-20">
     <h2 class="mb-4 text-5xl font-bold">
       Model {l.toUpperCase()}
     </h2>

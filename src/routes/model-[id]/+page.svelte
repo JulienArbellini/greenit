@@ -31,7 +31,7 @@
       id={data.id}
       path="products" />
     <div
-      class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-between pt-36 pb-6 {data
+      class="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-between pb-6 pt-36 {data
         .page.textColor} fly-in">
       <div class="text-center">
         <h2 class="mb-2 font-huge text-4xl">{data.page.title}</h2>
@@ -228,14 +228,14 @@
       class="fly-in flex h-screen w-screen flex-col items-center justify-center">
       <div class="flex max-w-4xl flex-col p-10 text-sm sm:flex-row">
         <div
-          class="mr-10 hidden w-64 flex-col  items-center justify-center gap-4 p-4 text-sm sm:visible sm:flex sm:gap-4">
+          class="mr-10 hidden w-64 flex-col items-center justify-center gap-4 p-4 text-sm sm:visible sm:flex sm:gap-4">
           <div class="flex max-w-4xl flex-col text-sm">
             <h2 class="font-huge text-2xl">
               Order Model {data.id.toUpperCase()}
             </h2>
           </div>
           <button
-            class="w-48  rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
+            class="w-48 rounded border-[3px] border-zinc-800 bg-white px-4 py-2 text-black shadow transition-all duration-300 hover:bg-zinc-800 hover:text-white"
             >Order Now</button>
           <button
             class="w-48 rounded bg-gray-100 px-4 py-2 text-black transition-all duration-300 hover:bg-gray-200"

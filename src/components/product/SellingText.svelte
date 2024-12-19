@@ -6,7 +6,7 @@
 <div class="fly-in flex w-screen flex-col items-center justify-center">
   <div class="flex max-w-4xl flex-col p-10 text-sm sm:flex-row">
     <div
-      class="mr-10 hidden w-64 flex-col  items-center justify-center gap-4 p-4 text-sm sm:visible sm:flex sm:gap-4">
+      class="mr-10 hidden w-64 flex-col items-center justify-center gap-4 p-4 text-sm sm:visible sm:flex sm:gap-4">
       <div class="flex max-w-4xl flex-col text-sm">
         <p class="font-big text-xl">{title}</p>
         <h2 class="font-huge text-2xl">{subtitle}</h2>

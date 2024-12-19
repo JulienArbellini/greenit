@@ -16,9 +16,9 @@
 
 <label
   for="sidebarToggle"
-  class="pointer-events-none absolute top-0 right-0 z-50 h-screen w-screen bg-black bg-opacity-30 opacity-0 backdrop-blur-[2px] transition-opacity duration-300">
+  class="pointer-events-none absolute right-0 top-0 z-50 h-screen w-screen bg-black bg-opacity-30 opacity-0 backdrop-blur-[2px] transition-opacity duration-300">
   <section
-    class="fixed top-0 right-0 z-50 h-screen w-80 translate-x-full transform bg-white bg-opacity-100 p-10 transition-all duration-300">
+    class="fixed right-0 top-0 z-50 h-screen w-80 translate-x-full transform bg-white bg-opacity-100 p-10 transition-all duration-300">
     <div class="mb-10 flex w-full justify-end">
       <label
         for="sidebarToggle"

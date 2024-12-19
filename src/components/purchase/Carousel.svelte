@@ -337,7 +337,7 @@
       id="interior-3" />
   </div>
   <div
-    class="mt-5 mb-24 flex h-10 w-full max-w-xl flex-row justify-center gap-2">
+    class="mb-24 mt-5 flex h-10 w-full max-w-xl flex-row justify-center gap-2">
     <label
       for="interior-1"
       class="cursor-pointer">

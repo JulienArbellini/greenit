@@ -1,0 +1,2 @@
+// _app/immutable/assets/MenuButton.d4YIFXBx.css
+export default "#sidebarToggle.svelte-19lms9i:checked~label:where(.svelte-19lms9i){opacity:1;pointer-events:auto}#sidebarToggle.svelte-19lms9i:checked~label:where(.svelte-19lms9i)>section:where(.svelte-19lms9i){transform:translate(0)}\n";
